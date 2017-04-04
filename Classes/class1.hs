@@ -58,4 +58,4 @@ validDate (Date y m d) = d > 0 && daysInMonth m y >= d
 
 -- Multiplying List Elements
 multiply :: Num a => [a] -> a
-multiply = foldl1 (*)
+multiply = foldl (*) 1
