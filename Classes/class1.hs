@@ -67,3 +67,11 @@ substitute a b [] = []
 substitute a b (x:xs)
   | a == x = b:(substitute a b xs)
   | otherwise = x:(substitute a b xs)
+
+
+-- Avoiding duplicates
+duplicates :: Eq a => [a] -> Bool
+duplicates [] = False
+duplicates (x:xs)
+  | elem x xs = True
+  | otherwise = duplicates xs
