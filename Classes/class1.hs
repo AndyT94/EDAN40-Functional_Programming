@@ -59,3 +59,11 @@ validDate (Date y m d) = d > 0 && daysInMonth m y >= d
 -- Multiplying List Elements
 multiply :: Num a => [a] -> a
 multiply = foldl1 (*)
+
+
+-- Substitution
+substitute :: Eq a => a -> a -> [a] -> [a]
+substitute a b [] = []
+substitute a b (x:xs)
+  | a == x = b:(substitute a b xs)
+  | otherwise = x:(substitute a b xs)
