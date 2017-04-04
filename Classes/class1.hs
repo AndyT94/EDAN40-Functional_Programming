@@ -84,3 +84,6 @@ removeDuplicates (x:xs)
 
 prop_duplicatesRemoved :: [Integer] -> Bool
 prop_duplicatesRemoved xs = not (duplicates (removeDuplicates xs))
+
+
+-- Comprehensions
