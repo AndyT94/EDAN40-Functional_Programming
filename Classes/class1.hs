@@ -75,3 +75,12 @@ duplicates [] = False
 duplicates (x:xs)
   | elem x xs = True
   | otherwise = duplicates xs
+
+removeDuplicates :: Eq a => [a] -> [a]
+removeDuplicates [] = []
+removeDuplicates (x:xs)
+  | elem x xs = removeDuplicates xs
+  | otherwise = x: removeDuplicates xs
+
+prop_duplicatesRemoved :: [Integer] -> Bool
+prop_duplicatesRemoved xs = not (duplicates (removeDuplicates xs))
