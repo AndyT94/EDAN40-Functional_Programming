@@ -38,3 +38,19 @@ nextFactor k n
 
 numFactors :: Int -> Int
 numFactors n = length [x | x <- [1..n], mod n x == 0]
+
+
+-- Defining Types
+type Month = Int
+data Date = Date Int Month Int
+
+daysInMonth :: Month -> Int -> Int
+daysInMonth m y
+  | m <= 0 || m > 12 = 0
+  | m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12 = 31
+  | m == 4 || m == 6 || m == 9 || m == 11 = 30
+  | mod y 4 == 0 = 29
+  | otherwise = 28
+
+validDate :: Date -> Bool
+validDate (Date y m d) = d > 0 && daysInMonth m y >= d
