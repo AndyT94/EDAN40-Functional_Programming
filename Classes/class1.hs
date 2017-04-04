@@ -14,3 +14,6 @@ sumsq n
 
 -- Sum of squares mapping
 sumsqMap :: Int -> Int
+sumsqMap n
+  | n <= 0 = 0
+  | otherwise = foldl (+) 0 (map (^2) [1..n])
