@@ -17,3 +17,10 @@ sumsqMap :: Int -> Int
 sumsqMap n
   | n <= 0 = 0
   | otherwise = foldl (+) 0 (map (^2) [1..n])
+
+
+-- The Towers of Hanoi
+hanoi :: Int -> Int
+hanoi n
+  | n <= 0 = 0
+  | otherwise = 1 + 2 * hanoi (n - 1)
