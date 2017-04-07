@@ -1,3 +1,6 @@
+import Data.Ord
+import Data.List
+
 -- The Maximum Function
 maxi :: Ord a => a -> a -> a
 maxi x y
@@ -105,3 +108,19 @@ remove _ [] = []
 remove y (x:xs)
  | y == x = xs
  | otherwise = x:(remove y xs)
+
+
+--Shortest and Longest
+shortestAndLongest :: [String] -> (String, String)
+shortestAndLongest [] = ([], [])
+shortestAndLongest list = (shortest list, longest list)
+
+shortest :: [String] -> String
+shortest xs = minimumBy (comparing length) xs
+
+longest :: [String] -> String
+longest xs = maximumBy (comparing length) xs
+
+
+-- Mystery
+mystery xs = foldr (++) [] (map (\y -> [y]) xs)
