@@ -89,3 +89,19 @@ prop_duplicatesRemoved xs = not (duplicates (removeDuplicates xs))
 -- Comprehensions
 pythagorean :: Int -> [(Int, Int, Int)]
 pythagorean n = [(a, b, c) | a <- [1..n], b <- [1..n], c <- [1..n], a^2 + b^2 == c^2]
+
+
+-- Permutations
+isPermutation :: Eq a => [a] -> [a] -> Bool
+isPermutation [] [] = True
+isPermutation _ [] = False
+isPermutation [] _ = False
+isPermutation (x:xs) ys
+  | elem x ys = isPermutation xs (remove x ys)
+  | otherwise = False
+
+remove :: Eq a => a -> [a] -> [a]
+remove _ [] = []
+remove y (x:xs)
+ | y == x = xs
+ | otherwise = x:(remove y xs)
