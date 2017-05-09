@@ -1,0 +1,3556 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-24 15:46:41.5741439 UTC
+
+interface main@main:Main 8002
+  interface hash: bc2257ebca15efc426940d504d89ed89
+  ABI hash: c454424049562a0a4357776e1423ff9e
+  export-list hash: 8d8a1d274ccf76ef5568dc3294f75c0a
+  orphan hash: 7ab38a9e01a3c804baf2e4ffa6e6dbdb
+  flag hash: ccf2beefb8aab8aa4f7b23b9c5fb8e12
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: MissingH-1.4.0.1@MissingH-1.4.0.1-L3yYX0hkQAH8A0DHzzwMrf
+                      QuickCheck-2.9.2@QuickCheck-2.9.2-Jyj4gc4JxkEIgGFLAsGhs9
+                      Win32-2.3.1.1@Win32-2.3.1.1
+                      ansi-terminal-0.6.2.3@ansi-terminal-0.6.2.3-Az560Cs0ObY6ZODYjxtBiR
+                      ansi-wl-pprint-0.6.7.3@ansi-wl-pprint-0.6.7.3-DiRD02X4Bp4CayfqPjYmEo
+                      array-0.5.1.1@array-0.5.1.1
+                      assignment1-0.1.0.0@assignment1-0.1.0.0-2RzjC4JpVbO6M4vQTQJu9q
+                      async-2.1.1@async-2.1.1-4n6HEMPJR2eJK0JpvCfuPK base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      clock-0.7.2@clock-0.7.2-8dRNleB7rysIZAOReuhpZA
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      optparse-applicative-0.13.2.0@optparse-applicative-0.13.2.0-SWjmfay0WD4jZNxwNzmOL
+                      parsec-3.1.11@parsec-3.1.11-113irVHGgd88sRnywByDNw
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      process-1.4.3.0@process-1.4.3.0
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa
+                      regex-tdfa-1.2.2@regex-tdfa-1.2.2-1CtrRJehZW1FAGt405eZD
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      tasty-0.11.2@tasty-0.11.2-Cv0UdxZVyGDyJYy1YSB5z
+                      tasty-hunit-0.9.2@tasty-hunit-0.9.2-F8F2RANOdpI9gj9HgtfORV
+                      tasty-quickcheck-0.8.4@tasty-quickcheck-0.8.4-4brPpMtXTCE5L2TDgxAJqd
+                      template-haskell-2.11.1.0
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+                      tf-random-0.5@tf-random-0.5-BGjMgO8m67W8CHiEl15kZ7
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unbounded-delays-0.1.0.10@unbounded-delays-0.1.0.10-3F57u5nffxtCfRzQ6Bvb7x
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa:Text.Regex.Base.Context
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-1CtrRJehZW1FAGt405eZD:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-1CtrRJehZW1FAGt405eZD:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-1CtrRJehZW1FAGt405eZD:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-1CtrRJehZW1FAGt405eZD:Text.Regex.TDFA.String
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         clock-0.7.2@clock-0.7.2-8dRNleB7rysIZAOReuhpZA:System.Clock
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         tasty-0.11.2@tasty-0.11.2-Cv0UdxZVyGDyJYy1YSB5z:Test.Tasty.Core
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+import  -/  MissingH-1.4.0.1@MissingH-1.4.0.1-L3yYX0hkQAH8A0DHzzwMrf:Data.List.Utils 9e9c954ad33567f3613bfb17fd9ce4e8
+import  -/  assignment1-0.1.0.0@assignment1-0.1.0.0-2RzjC4JpVbO6M4vQTQJu9q:Chatterbot 276f9772290675b791290bd44d659f14
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  tasty-0.11.2@tasty-0.11.2-Cv0UdxZVyGDyJYy1YSB5z:Test.Tasty 8f84267d1a479d7d6abf54a77dc4cb6b
+import  -/  tasty-0.11.2@tasty-0.11.2-Cv0UdxZVyGDyJYy1YSB5z:Test.Tasty.Core 8adbe1f635b52dc679493f2fe202bdf2
+import  -/  tasty-hunit-0.9.2@tasty-hunit-0.9.2-F8F2RANOdpI9gj9HgtfORV:Test.Tasty.HUnit 65554dcbbd6ee1733f5df85df43eb273
+import  -/  tasty-hunit-0.9.2@tasty-hunit-0.9.2-F8F2RANOdpI9gj9HgtfORV:Test.Tasty.HUnit.Orig b5485603ecadc17bdc1abdff8aecff28
+import  -/  tasty-quickcheck-0.8.4@tasty-quickcheck-0.8.4-4brPpMtXTCE5L2TDgxAJqd:Test.Tasty.QuickCheck d2a2abebb15628547492506136cbc8c0
+d807c522958cfb0fb046c959b72f51ad
+  $s$fArbitrary[]_$s$fArbitrary[]_$cshrink ::
+    [GHC.Types.Char] -> [[GHC.Types.Char]]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Types.Char]) ->
+                 Test.QuickCheck.Arbitrary.shrinkList
+                   @ GHC.Types.Char
+                   Test.QuickCheck.Arbitrary.$fArbitraryChar_$cshrink
+                   xs) -}
+8725e27a63551ef0d5464b478f2189a3
+  $s$fEq(,) ::
+    GHC.Classes.Eq ([GHC.Base.String], [Chatterbot.Phrase])
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ([GHC.Base.String], [Chatterbot.Phrase])
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ [GHC.Base.String]
+                     @ [Chatterbot.Phrase]
+                     Main.$s$fEq(,)1
+                     Main.$s$fEq(,)_$dEq1)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ [GHC.Base.String]
+                     @ [Chatterbot.Phrase]
+                     Main.$s$fEq(,)1
+                     Main.$s$fEq(,)_$dEq1) -}
+8135b9043e5467385a30d606b2896476
+  $s$fEq(,)1 :: GHC.Classes.Eq Chatterbot.Phrase
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                GHC.Classes.$fEq[]_$s$fEq[]2 -}
+f1a0e5f2b801ce8100af2556fc2c6332
+  $s$fEq(,)_$dEq1 :: GHC.Classes.Eq [Chatterbot.Phrase]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Main.$s$fEq(,)_$s$fEq[] -}
+9c3eaa3384bd746da081feb49b9d2033
+  $s$fEq(,)_$s$fEq[] :: GHC.Classes.Eq [[GHC.Base.String]]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [[GHC.Base.String]]
+                  (GHC.Classes.$fEq[]_$c== @ [GHC.Base.String] Main.$s$fEq(,)1)
+                  Main.$s$fEq(,)_$s$fEq[]_$c/= -}
+be116f8e5697a8a284e18a2b8d034091
+  $s$fEq(,)_$s$fEq[]_$c/= ::
+    [[GHC.Base.String]] -> [[GHC.Base.String]] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: [[GHC.Base.String]]) (y :: [[GHC.Base.String]]) ->
+                 GHC.Classes.not
+                   (GHC.Classes.$fEq[]_$c==
+                      @ [GHC.Base.String]
+                      Main.$s$fEq(,)1
+                      x
+                      y)) -}
+d84d8b007092111029157ebb69f151e6
+  $s$fEqMaybe :: GHC.Classes.Eq (GHC.Base.Maybe [GHC.Types.Char])
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe [GHC.Types.Char])
+                  Main.$s$fEqMaybe2
+                  (GHC.Base.$fEqMaybe_$c/= @ [GHC.Types.Char] Main.$s$fEqMaybe1) -}
+b759e5912c1b92f8eb9c5deeb22256bd
+  $s$fEqMaybe1 :: GHC.Classes.Eq [GHC.Types.Char]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                GHC.Classes.$fEq[]_$s$fEq[]1 -}
+e678964856437b0b008322e07c324968
+  $s$fEqMaybe2 ::
+    GHC.Base.Maybe [GHC.Types.Char]
+    -> GHC.Base.Maybe [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Base.Maybe [GHC.Types.Char])
+                   (ds1 :: GHC.Base.Maybe [GHC.Types.Char]) ->
+                 case ds of wild {
+                   GHC.Base.Nothing
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.True
+                        GHC.Base.Just ipv -> GHC.Types.False }
+                   GHC.Base.Just a1
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.False
+                        GHC.Base.Just b1 -> GHC.Base.eqString a1 b1 } }) -}
+e0ee8aadde05c08b29cf48bc9e0c890e
+  $s$fEqMaybe3 ::
+    GHC.Classes.Eq (GHC.Base.Maybe [GHC.Integer.Type.Integer])
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe [GHC.Integer.Type.Integer])
+                  Main.$s$fEqMaybe4
+                  (GHC.Base.$fEqMaybe_$c/=
+                     @ [GHC.Integer.Type.Integer]
+                     Main.$s$fEqMaybe_$dEq) -}
+a4a79223417a5dcc87133304be0059e7
+  $s$fEqMaybe4 ::
+    GHC.Base.Maybe [GHC.Integer.Type.Integer]
+    -> GHC.Base.Maybe [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: GHC.Base.Maybe [GHC.Integer.Type.Integer])
+                   (ds1 :: GHC.Base.Maybe [GHC.Integer.Type.Integer]) ->
+                 case ds of wild {
+                   GHC.Base.Nothing
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.True
+                        GHC.Base.Just ipv -> GHC.Types.False }
+                   GHC.Base.Just a1
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.False
+                        GHC.Base.Just b1
+                        -> GHC.Classes.$fEq[]_$c==
+                             @ GHC.Integer.Type.Integer
+                             GHC.Integer.Type.$fEqInteger
+                             a1
+                             b1 } }) -}
+182a0c0fdd797c2d9e7045273b3170ab
+  $s$fEqMaybe_$dEq :: GHC.Classes.Eq [GHC.Integer.Type.Integer]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Main.$s$fEqMaybe_$s$fEq[] -}
+a19534ad8ab043b480292abb87a4b136
+  $s$fEqMaybe_$s$fEq[] :: GHC.Classes.Eq [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Integer.Type.Integer]
+                  (GHC.Classes.$fEq[]_$c==
+                     @ GHC.Integer.Type.Integer
+                     GHC.Integer.Type.$fEqInteger)
+                  Main.$s$fEqMaybe_$s$fEq[]_$c/= -}
+3cfd12cc55a412402af1a0ec00f3d89d
+  $s$fEqMaybe_$s$fEq[]_$c/= ::
+    [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: [GHC.Integer.Type.Integer])
+                   (y :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Classes.not
+                   (GHC.Classes.$fEq[]_$c==
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fEqInteger
+                      x
+                      y)) -}
+d97cc543ea935ebb128ab311274c0bfb
+  $s$fEq[] ::
+    GHC.Classes.Eq [(Chatterbot.Phrase, [Chatterbot.Phrase])]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [(Chatterbot.Phrase, [Chatterbot.Phrase])]
+                  (GHC.Classes.$fEq[]_$c==
+                     @ (Chatterbot.Phrase, [Chatterbot.Phrase])
+                     Main.$s$fEq[]_$dEq)
+                  Main.$s$fEq[]_$s$fEq[]_$c/= -}
+d2d10f6196c05b018c25339d3dd2afd6
+  $s$fEq[]_$dEq ::
+    GHC.Classes.Eq (Chatterbot.Phrase, [Chatterbot.Phrase])
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Main.$s$fEq(,) -}
+ed70ad9061e994b9b116a441b35ff131
+  $s$fEq[]_$s$fEq[]_$c/= ::
+    [(Chatterbot.Phrase, [Chatterbot.Phrase])]
+    -> [(Chatterbot.Phrase, [Chatterbot.Phrase])] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: [(Chatterbot.Phrase, [Chatterbot.Phrase])])
+                   (y :: [(Chatterbot.Phrase, [Chatterbot.Phrase])]) ->
+                 GHC.Classes.not
+                   (GHC.Classes.$fEq[]_$c==
+                      @ (Chatterbot.Phrase, [Chatterbot.Phrase])
+                      Main.$s$fEq[]_$dEq
+                      x
+                      y)) -}
+46e4757646a52165dbf2c22724072b56
+  $s$fShow(,)1 :: [[[GHC.Base.String]]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[[GHC.Base.String]]]) (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [[GHC.Base.String]]
+                   GHC.Show.$fShow[]_$s$cshowList1
+                   eta
+                   eta1) -}
+88d58fe84d006ac075f7be24c19ebe63
+  $s$fShow(,)2 :: [[GHC.Base.String]] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [[GHC.Base.String]]) ->
+                 GHC.Show.showList__
+                   @ [GHC.Base.String]
+                   GHC.Show.shows_$s$cshowList
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+e6a803d95cfef87d8e6eef2256d9dfa2
+  $s$fShow(,)3 ::
+    GHC.Types.Int -> [[GHC.Base.String]] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.Types.Int)
+                   (eta :: [[GHC.Base.String]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.$fShow[]_$s$cshowList1 eta eta1) -}
+9eb132d2d7627b7a567f4127d3dc755b
+  $s$fShow(,)4 :: GHC.Show.Show Chatterbot.Phrase
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                GHC.Show.$fShow[]_$s$fShow[]2 -}
+463b8aefa61f8ba844ba777572dadf55
+  $s$fShow(,)_$dShow1 :: GHC.Show.Show [Chatterbot.Phrase]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Main.$s$fShow(,)_$s$fShow[] -}
+73b634a289beb53523fea45526238f4d
+  $s$fShow(,)_$s$fShow(,)_$cshowList ::
+    [([GHC.Base.String], [Chatterbot.Phrase])] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [([GHC.Base.String], [Chatterbot.Phrase])])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ ([GHC.Base.String], [Chatterbot.Phrase])
+                   (GHC.Show.$fShow(,)_$cshowsPrec
+                      @ [GHC.Base.String]
+                      @ [Chatterbot.Phrase]
+                      Main.$s$fShow(,)4
+                      Main.$s$fShow(,)_$dShow1
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+c681fca1b1254b5194c0770ba483ceb1
+  $s$fShow(,)_$s$fShow[] :: GHC.Show.Show [[GHC.Base.String]]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [[GHC.Base.String]]
+                  Main.$s$fShow(,)3
+                  Main.$s$fShow(,)2
+                  Main.$s$fShow(,)1 -}
+f24e55d5b53b18d67f3f71b1e8f053aa
+  $s$fShowMaybe :: GHC.Show.Show (GHC.Base.Maybe [GHC.Types.Char])
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe [GHC.Types.Char])
+                  (GHC.Show.$fShowMaybe_$cshowsPrec
+                     @ [GHC.Types.Char]
+                     Main.$s$fShowMaybe2)
+                  (GHC.Show.$fShowMaybe_$cshow
+                     @ [GHC.Types.Char]
+                     Main.$s$fShowMaybe2)
+                  Main.$s$fShowMaybe1 -}
+1b34e972e92b8808fb681bad3179ebf3
+  $s$fShowMaybe1 ::
+    [GHC.Base.Maybe [GHC.Types.Char]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [GHC.Base.Maybe [GHC.Types.Char]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (GHC.Base.Maybe [GHC.Types.Char])
+                   (GHC.Show.$fShowMaybe_$cshowsPrec
+                      @ [GHC.Types.Char]
+                      GHC.Show.$fShow[]_$s$fShow[]1
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+90b85208c7edc10551c519d9bb8c7fbc
+  $s$fShowMaybe2 :: GHC.Show.Show [GHC.Types.Char]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                GHC.Show.$fShow[]_$s$fShow[]1 -}
+23688ca5edcc9a28ce8f772268d19f7e
+  $s$fShowMaybe3 ::
+    GHC.Show.Show (GHC.Base.Maybe [GHC.Integer.Type.Integer])
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe [GHC.Integer.Type.Integer])
+                  (GHC.Show.$fShowMaybe_$cshowsPrec
+                     @ [GHC.Integer.Type.Integer]
+                     Main.$s$fShowMaybe_$dShow)
+                  (GHC.Show.$fShowMaybe_$cshow
+                     @ [GHC.Integer.Type.Integer]
+                     Main.$s$fShowMaybe_$dShow)
+                  Main.$s$fShowMaybe4 -}
+3ad2214f2cbbfae3f554a74f75cf28c5
+  $s$fShowMaybe4 ::
+    [GHC.Base.Maybe [GHC.Integer.Type.Integer]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [GHC.Base.Maybe [GHC.Integer.Type.Integer]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (GHC.Base.Maybe [GHC.Integer.Type.Integer])
+                   (GHC.Show.$fShowMaybe_$cshowsPrec
+                      @ [GHC.Integer.Type.Integer]
+                      Main.$s$fShowMaybe_$s$fShow[]
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+708de6937bde26515c608857ae6ec66d
+  $s$fShowMaybe_$dShow :: GHC.Show.Show [GHC.Integer.Type.Integer]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Main.$s$fShowMaybe_$s$fShow[] -}
+3f6d62d338abee0e1175dd5a05e2e4f5
+  $s$fShowMaybe_$s$fShow[] ::
+    GHC.Show.Show [GHC.Integer.Type.Integer]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Integer.Type.Integer]
+                  Main.$s$fShowMaybe_$s$fShow[]_$cshowsPrec
+                  Main.$s$fShowMaybe_$s$fShow[]_$cshow
+                  Main.$s$fShowMaybe_$s$fShow[]_$cshowList -}
+a1644721c333685f1b515906fa9ae668
+  $s$fShowMaybe_$s$fShow[]_$cshow ::
+    [GHC.Integer.Type.Integer] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Show.$fShowInteger_$cshowList
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+b14ad35582d5e6659aff4e79ec432aa5
+  $s$fShowMaybe_$s$fShow[]_$cshowList ::
+    [[GHC.Integer.Type.Integer]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[GHC.Integer.Type.Integer]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [GHC.Integer.Type.Integer]
+                   GHC.Show.$fShowInteger_$cshowList
+                   eta
+                   eta1) -}
+e927f20d313f319978fc60df2049f63a
+  $s$fShowMaybe_$s$fShow[]_$cshowsPrec ::
+    GHC.Types.Int -> [GHC.Integer.Type.Integer] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.Types.Int)
+                   (eta :: [GHC.Integer.Type.Integer])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.$fShowInteger_$cshowList eta eta1) -}
+e4858afa6d9fcab47b130114a10d3a3e
+  $s$fShow[] ::
+    GHC.Show.Show [(Chatterbot.Phrase, [Chatterbot.Phrase])]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [(Chatterbot.Phrase, [Chatterbot.Phrase])]
+                  Main.$s$fShow[]_$s$fShow[]_$cshowsPrec
+                  Main.$s$fShow[]1
+                  Main.$s$fShow[]_$s$fShow[]_$cshowList -}
+464299f85f2f940ac7ff35e70295b01d
+  $s$fShow[]1 ::
+    [(Chatterbot.Phrase, [Chatterbot.Phrase])] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: [(Chatterbot.Phrase, [Chatterbot.Phrase])]) ->
+                 GHC.Show.showList__
+                   @ ([GHC.Base.String], [Chatterbot.Phrase])
+                   Main.$s$fShow[]2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+2861d21debae464bd9f90c91fdffa304
+  $s$fShow[]2 ::
+    ([GHC.Base.String], [Chatterbot.Phrase])
+    -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (w3 :: ([GHC.Base.String], [Chatterbot.Phrase]))
+                   (w4 :: GHC.Base.String)[OneShot] ->
+                 case w3 of ww { (,) ww1 ww2 ->
+                 GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows7
+                   (GHC.Show.showList__
+                      @ [GHC.Types.Char]
+                      GHC.Show.shows_$cshowList1
+                      ww1
+                      (GHC.Types.:
+                         @ GHC.Types.Char
+                         GHC.Show.shows5
+                         (GHC.Show.$fShow(,)_$sgo
+                            (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w4)
+                            (\ (eta :: GHC.Base.String) ->
+                             GHC.Show.$fShow[]_$s$cshowList1 ww2 eta)
+                            (GHC.Types.[] @ GHC.Show.ShowS)))) }) -}
+ba6c281702db113fee35153550419542
+  $s$fShow[]_$s$fShow[]_$cshowList ::
+    [[(Chatterbot.Phrase, [Chatterbot.Phrase])]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[(Chatterbot.Phrase, [Chatterbot.Phrase])]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [(Chatterbot.Phrase, [Chatterbot.Phrase])]
+                   Main.$s$fShow(,)_$s$fShow(,)_$cshowList
+                   eta
+                   eta1) -}
+3ee9128ff2549b46fdba8ef048110787
+  $s$fShow[]_$s$fShow[]_$cshowsPrec ::
+    GHC.Types.Int
+    -> [(Chatterbot.Phrase, [Chatterbot.Phrase])] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.Types.Int)
+                   (eta :: [([GHC.Base.String], [Chatterbot.Phrase])])
+                   (eta1 :: GHC.Base.String) ->
+                 Main.$s$fShow(,)_$s$fShow(,)_$cshowList eta eta1) -}
+9192e45b2093ceeacc8169ea6c9f68df
+  $stestProperty2 ::
+    ([GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool)
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 3, Strictness: <L,C(U)><L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (f :: [GHC.Types.Char]
+                         -> [GHC.Types.Char] -> GHC.Types.Bool)
+                   (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Main.$stestProperty4
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Main.$stestProperty3
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Main.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   f
+                   eta
+                   eta1) -}
+45765f79fac136cf481603ed197a27e6
+  $stestProperty3 ::
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int)[OneShot] ->
+                 case eta1 of ww { GHC.Types.I# ww1 ->
+                 Test.QuickCheck.Gen.$wlistOf
+                   @ GHC.Types.Char
+                   Test.QuickCheck.Arbitrary.$fArbitraryChar1
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <GHC.Types.Char>_R))
+                   eta
+                   ww1 }) -}
+4a3a064ac7499064099bd9d895ab0aa5
+  $stestProperty4 ::
+    ([GHC.Types.Char] -> GHC.Types.Bool)
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 3, Strictness: <L,C(U)><L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (f :: [GHC.Types.Char] -> GHC.Types.Bool)
+                   (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Bool
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Test.QuickCheck.Property.$fTestableBool_$cproperty
+                     `cast`
+                   (Sym (Test.QuickCheck.Property.N:Testable[0] <GHC.Types.Bool>_N))
+                   Main.$stestProperty3
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Main.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   f
+                   eta
+                   eta1) -}
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+825970fe8d6b7c84f433d16b73dbefd4
+  allTests :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup Main.main376 Main.main2) -}
+f5aebe2e02eb5215dbbaca0550b2a616
+  frenchPresentation :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m, Unfolding: ((Main.main143, Main.main144)) -}
+0f3ab7c8bea6b3fc899105344a5aaa9b
+  main :: GHC.Types.IO ()
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+f5eff4160f842f010233514df644d7d0
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Test.Tasty.CmdLine.defaultMainWithIngredients1
+                   Test.Tasty.defaultIngredients
+                   Main.allTests) -}
+4dfc1ce08383567c549b7b2f11814b09
+  main10 :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup Main.main375 Main.main11) -}
+97dad20b96d207809173ef291095f887
+  main100 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.main107
+                   Main.main101) -}
+0fc5c6a84ba93eaeaf6428bea9983e33
+  main101 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.main105
+                   Main.main102) -}
+ed234b9c3388a1714bdf81cd9318351b
+  main102 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.main103
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+0575fbb4859f132fdef34d60d28cda3c
+  main103 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.List.lookup
+                        @ [GHC.Types.Char]
+                        @ [GHC.Types.Char]
+                        GHC.Classes.$fEq[]_$s$fEq[]1
+                        Main.main104
+                        Chatterbot.reflections of wild {
+                   GHC.Base.Nothing -> Main.main104 GHC.Base.Just x1 -> x1 }) -}
+3b2481e854d7038cd96a55e324fda595
+  main104 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "eyes"#) -}
+859964939bd57fe6daa9955f7a75eb6e
+  main105 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.List.lookup
+                        @ [GHC.Types.Char]
+                        @ [GHC.Types.Char]
+                        GHC.Classes.$fEq[]_$s$fEq[]1
+                        Main.main106
+                        Chatterbot.reflections of wild {
+                   GHC.Base.Nothing -> Main.main106 GHC.Base.Just x1 -> x1 }) -}
+7fdd06d15a52ccd07a2d46ed4f7080d6
+  main106 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "your"#) -}
+f6a9899693164d9d9e164f11626915ca
+  main107 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.List.lookup
+                        @ [GHC.Types.Char]
+                        @ [GHC.Types.Char]
+                        GHC.Classes.$fEq[]_$s$fEq[]1
+                        Main.main108
+                        Chatterbot.reflections of wild {
+                   GHC.Base.Nothing -> Main.main108 GHC.Base.Just x1 -> x1 }) -}
+b06554969152667ea7b238cfc1176dfa
+  main108 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "in"#) -}
+b3612f5f8b2c73a411c519c7da29d56b
+  main109 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.List.lookup
+                        @ [GHC.Types.Char]
+                        @ [GHC.Types.Char]
+                        GHC.Classes.$fEq[]_$s$fEq[]1
+                        Main.main110
+                        Chatterbot.reflections of wild {
+                   GHC.Base.Nothing -> Main.main110 GHC.Base.Just x1 -> x1 }) -}
+3bcadc0ecb49349a377bc473f086b603
+  main11 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main345
+                   Main.main12) -}
+592b14ade5ee85992ad73845c3cfb91f
+  main110 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "reflection"#) -}
+71ef7a4f3b221a7abb03df8d5b3f69a6
+  main111 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.List.lookup
+                        @ [GHC.Types.Char]
+                        @ [GHC.Types.Char]
+                        GHC.Classes.$fEq[]_$s$fEq[]1
+                        Main.main112
+                        Chatterbot.reflections of wild {
+                   GHC.Base.Nothing -> Main.main112 GHC.Base.Just x1 -> x1 }) -}
+a37059f851b40c6993f411d6f533f273
+  main112 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "my"#) -}
+80ce68edb1208528a7cf7a93e93a217e
+  main113 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.List.lookup
+                        @ [GHC.Types.Char]
+                        @ [GHC.Types.Char]
+                        GHC.Classes.$fEq[]_$s$fEq[]1
+                        Main.main114
+                        Chatterbot.reflections of wild {
+                   GHC.Base.Nothing -> Main.main114 GHC.Base.Just x1 -> x1 }) -}
+5c8352837c4e7cc37facf6eab8c68c5b
+  main114 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "see"#) -}
+9e63953898bd18cd18689a1534ee77cf
+  main115 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.List.lookup
+                        @ [GHC.Types.Char]
+                        @ [GHC.Types.Char]
+                        GHC.Classes.$fEq[]_$s$fEq[]1
+                        Main.main116
+                        Chatterbot.reflections of wild {
+                   GHC.Base.Nothing -> Main.main116 GHC.Base.Just x1 -> x1 }) -}
+6019cb632bde5a7533186f44401ac565
+  main116 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "never"#) -}
+7a007095f8a56f8ca928aebafb21eb78
+  main117 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.List.lookup
+                        @ [GHC.Types.Char]
+                        @ [GHC.Types.Char]
+                        GHC.Classes.$fEq[]_$s$fEq[]1
+                        Main.main118
+                        Chatterbot.reflections of wild {
+                   GHC.Base.Nothing -> Main.main118 GHC.Base.Just x1 -> x1 }) -}
+b297ef8cec8defa9f5be726c850bcae2
+  main118 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "will"#) -}
+17689f26fdbddfbe4df4e3bf2b447b36
+  main119 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.List.lookup
+                        @ [GHC.Types.Char]
+                        @ [GHC.Types.Char]
+                        GHC.Classes.$fEq[]_$s$fEq[]1
+                        Main.main_x
+                        Chatterbot.reflections of wild {
+                   GHC.Base.Nothing -> Main.main_x GHC.Base.Just x1 -> x1 }) -}
+9cd99401c7cdbc5b3244854a3bc0e80e
+  main12 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main236
+                   Main.main13) -}
+27b59e988f8bee94a97af31edba2b4ea
+  main120 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main129
+                   Main.main121) -}
+843e80fc440255b46217fbb1bfcbb19a
+  main121 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main118
+                   Main.main122) -}
+56909c4d6a2ec0d371dd435063477254
+  main122 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main116
+                   Main.main123) -}
+f2757f9a8535345f7bebadd8d1d69080
+  main123 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main114
+                   Main.main124) -}
+58099fd0f502f40abd210098793eb741
+  main124 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main106
+                   Main.main125) -}
+b31e1cab4e9873d2ba356c84c9667577
+  main125 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main110
+                   Main.main126) -}
+621b3e22e8e6ace0246b1ce4d2796198
+  main126 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main108
+                   Main.main127) -}
+396bf9c4f62171250a9fa1310456f6a3
+  main127 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main112
+                   Main.main128) -}
+0b3b7366b8ebcb2be3042f6cd18bc991
+  main128 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main104
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+8cdfb4a0fd9190a0ecd382b86997ddbe
+  main129 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "you"#) -}
+a212be534785e1195535428257d20b23
+  main13 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main218
+                   Main.main14) -}
+21b3c4da93fdc3a628eca892ecc11e09
+  main130 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Given reflect test"#) -}
+a64b9d6497f8a61c39d97aa7f44edc1a
+  main131 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Unit tests for reflect"#) -}
+d26d0f878e02c55cc52d0f9549d31520
+  main132 :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup Main.main163 Main.main133) -}
+5145ce89ca105ac5e2cc3a561f279f71
+  main133 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main157
+                   Main.main134) -}
+a8eb0f89c457170fd11301bc30d33040
+  main134 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main149
+                   Main.main135) -}
+d2d200a65877dd9b2296aae5407b15e0
+  main135 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main136
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+c155e054083ca40ddfe5ea79b942db20
+  main136 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main148
+                   Main.main137
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+49edfdc06bca3c0a2fcdeb169015dc87
+  main137 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ [GHC.Types.Char])
+                        Main.main138
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+480e961244fa3943b923e30a3ffc3499
+  main138 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case GHC.Base.map
+                        @ ([GHC.Types.Char], [GHC.Types.Char])
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.main145
+                        Main.main139 of wild {
+                   [] -> GHC.List.foldl2 @ (GHC.Base.Maybe [GHC.Types.Char])
+                   : x xs1
+                   -> Chatterbot.transformationsApply1 @ GHC.Types.Char xs1 x }) -}
+541b93e9cd44f52607058d0e189d7d83
+  main139 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Unfolding: (GHC.List.reverse1
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Main.presentations
+                   (GHC.Types.[] @ ([GHC.Types.Char], [GHC.Types.Char]))) -}
+1572f343d8ee61129600170afd4a2487
+  main14 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main193
+                   Main.main15) -}
+e6276d784e32ab7f8e4e0001cf7c6870
+  main140 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Main.main141
+                   (GHC.Types.[] @ ([GHC.Types.Char], [GHC.Types.Char]))) -}
+9f55f12ffa388699ecd2f03b28448b70
+  main141 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m, Unfolding: ((Main.main143, Main.main142)) -}
+159cb5482656234ef44a3893c47c3ccf
+  main142 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCStringUtf8#
+                   "Mitt namn \\195\\164r *"#) -}
+ae9bcd11f27f8f83fdbe96a096a7c802
+  main143 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "My name is *"#) -}
+0f20ee469fae29254e01771ea02dde5d
+  main144 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Je m'appelle *"#) -}
+f16e64a78aff1a6970dfbe862e5da11d
+  main145 ::
+    ([GHC.Types.Char], [GHC.Types.Char])
+    -> GHC.Base.Maybe [GHC.Types.Char]
+  {- Arity: 1,
+     Unfolding: (\ (w4 :: ([GHC.Types.Char], [GHC.Types.Char])) ->
+                 case w4 of ww { (,) ww1 ww2 ->
+                 case Chatterbot.match
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        Main.main147
+                        ww1
+                        Main.main146 of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ [GHC.Types.Char]
+                        (Chatterbot.substitute
+                           @ GHC.Types.Char
+                           GHC.Classes.$fEqChar
+                           Main.main147
+                           ww2
+                           x) } }) -}
+a76de64f0e5e0bcd0ce20c7b6626dfa3
+  main146 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "My shoe size is 45"#) -}
+1eadb6c4698617d66676b761d9396066
+  main147 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '*'#) -}
+b9ef35c72dc33a1b161d4d023c9e2a06
+  main148 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Given testcase nbr3"#) -}
+36b9e80b12f288a75c807ba28d2e79f6
+  main149 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main156
+                   Main.main150
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+df0fac6736e534c078855964e12c54d6
+  main15 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main164
+                   Main.main16) -}
+72bed65729306570da8c3826eb3e86d5
+  main150 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main154
+                        Main.main151
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+b9a4287c3d5b1fbb651b0c779852c0c4
+  main151 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case GHC.Base.map
+                        @ ([GHC.Types.Char], [GHC.Types.Char])
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.main152
+                        Main.main139 of wild {
+                   [] -> GHC.List.foldl2 @ (GHC.Base.Maybe [GHC.Types.Char])
+                   : x xs1
+                   -> Chatterbot.transformationsApply1 @ GHC.Types.Char xs1 x }) -}
+56a47286c0bdeefab7d1e34ec2f9576c
+  main152 ::
+    ([GHC.Types.Char], [GHC.Types.Char])
+    -> GHC.Base.Maybe [GHC.Types.Char]
+  {- Arity: 1,
+     Unfolding: (\ (w4 :: ([GHC.Types.Char], [GHC.Types.Char])) ->
+                 case w4 of ww { (,) ww1 ww2 ->
+                 case Chatterbot.match
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        Main.main147
+                        ww1
+                        Main.main153 of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ [GHC.Types.Char]
+                        (Chatterbot.substitute
+                           @ GHC.Types.Char
+                           GHC.Classes.$fEqChar
+                           Main.main147
+                           ww2
+                           x) } }) -}
+31812f2423cea4516cd2abd842de2047
+  main153 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "My name is Zacharias"#) -}
+a66e08b6c6fe30bb71d92c063db4a9e5
+  main154 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.Just @ [GHC.Types.Char] Main.main155) -}
+a7823c62f5cdc5049834279866a09aee
+  main155 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCStringUtf8#
+                   "Mitt namn \\195\\164r Zacharias"#) -}
+879d568a729db68e3d99667014dbc555
+  main156 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Given testcase nbr2"#) -}
+d878675069e1d59b552cfbcd67a12384
+  main157 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main162
+                   Main.main158
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+99d3dd8abd94dbf77bf377fdb1614bf9
+  main158 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main160
+                        Main.main159
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+6f0d8483b28ee1b77a9145d0f0ef0f20
+  main159 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case GHC.Base.map
+                        @ ([GHC.Types.Char], [GHC.Types.Char])
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.main152
+                        Main.presentations of wild {
+                   [] -> GHC.List.foldl2 @ (GHC.Base.Maybe [GHC.Types.Char])
+                   : x xs1
+                   -> Chatterbot.transformationsApply1 @ GHC.Types.Char xs1 x }) -}
+ef312d7e7bc858bd93857f9f46a5d3ed
+  main16 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main132
+                   Main.main17) -}
+e5a19605ad2dcbaeace09c1ee25a44d0
+  main160 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.Just @ [GHC.Types.Char] Main.main161) -}
+35db34801f3fd588de17ba590448a4c8
+  main161 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Je m'appelle Zacharias"#) -}
+30b87accf9c969bf786dc22cbada24bf
+  main162 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Given testcase nbr1"#) -}
+44a286833aabf37ef439b603841c80f1
+  main163 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Unit tests for transformationsApply"#) -}
+59c09d89c995e526116b47b994128f4b
+  main164 :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup Main.main192 Main.main165) -}
+5b3170b499e45f09b77ec7f2205cb250
+  main165 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main188
+                   Main.main166) -}
+7085ed5c1eb31bf9a8cee6b31aa5653c
+  main166 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main184
+                   Main.main167) -}
+f57c6ba1a01cda53c661a25763c6fd3b
+  main167 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main180
+                   Main.main168) -}
+9d0538174599ea1ba87bb0b4a1cbca6d
+  main168 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main176
+                   Main.main169) -}
+fcaa487c7e6002ae93bb96238d12254e
+  main169 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main170
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+1842a9255731dca25b46e840723e6dd1
+  main17 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main90
+                   Main.main18) -}
+5f118f470324cee058a0f9854de5fa62
+  main170 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main175
+                   Main.main171
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+af635267502f514f12e396ac109bbb0b
+  main171 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main174
+                        Main.main172
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+d9f7ee650f76fdda160701a160d5e116
+  main172 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case Main.main173 of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ [GHC.Types.Char]
+                        (Chatterbot.substitute
+                           @ GHC.Types.Char
+                           GHC.Classes.$fEqChar
+                           Main.main147
+                           (GHC.Types.[] @ GHC.Types.Char)
+                           x) }) -}
+9ef753c3133ce19f719806e32e5b2e45
+  main173 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main147
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+969376dd51e7435c89ea572d6e089db7
+  main174 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Base.Just
+                   @ [GHC.Types.Char]
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+4c0522441d9be75b1bda32ad47779fe1
+  main175 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Empty input and transformation"#) -}
+6d4e189e22cda73e4b4418c0b48cc1ca
+  main176 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main179
+                   Main.main177
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+3ee0002f7f581ea39f9133bbc1d83b43
+  main177 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ [GHC.Types.Char])
+                        Main.main178
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+2c7e387b593f854649fc3015b44d5d7b
+  main178 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case Chatterbot.match
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        Main.main147
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main153 of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ [GHC.Types.Char]
+                        (Chatterbot.substitute
+                           @ GHC.Types.Char
+                           GHC.Classes.$fEqChar
+                           Main.main147
+                           (GHC.Types.[] @ GHC.Types.Char)
+                           x) }) -}
+416ac454f552fcb6bf0cb574d9745bf8
+  main179 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Empty transformation"#) -}
+33c3583cc18feafa636ab341a006d927
+  main18 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main67
+                   Main.main19) -}
+fff91dfba3ffebd62e347b4d86524696
+  main180 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main183
+                   Main.main181
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+8be97d54bbe619fe0e4858f50112fd31
+  main181 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ [GHC.Types.Char])
+                        Main.main182
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+1528defe22ed5afe950fcb5f6209e72d
+  main182 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case Chatterbot.match
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        Main.main147
+                        Main.main143
+                        (GHC.Types.[] @ GHC.Types.Char) of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ [GHC.Types.Char]
+                        (Chatterbot.substitute
+                           @ GHC.Types.Char
+                           GHC.Classes.$fEqChar
+                           Main.main147
+                           Main.main144
+                           x) }) -}
+998aa5dfb2b961376f4ab46ecc55f765
+  main183 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Empty input"#) -}
+25569742b266d774e83dc6c63ef3fe2e
+  main184 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main187
+                   Main.main185
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+4a870031c8a593a7162337ab6d8f83dd
+  main185 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ [GHC.Types.Char])
+                        Main.main186
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+b303a2c45972cbfa1d9ea205ba85c1ea
+  main186 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case Chatterbot.match
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        Main.main147
+                        Main.main143
+                        Main.main146 of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ [GHC.Types.Char]
+                        (Chatterbot.substitute
+                           @ GHC.Types.Char
+                           GHC.Classes.$fEqChar
+                           Main.main147
+                           Main.main144
+                           x) }) -}
+04987641e8c3c0a834d81810e1ca8b9a
+  main187 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Testcase from testfile"#) -}
+103d39b30009d7d28758f2adb9a597d7
+  main188 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main191
+                   Main.main189
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+b7f1d042e6e827b6344edea363226610
+  main189 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main160
+                        Main.main190
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+361528962001c6bcae4eb7324d18350e
+  main19 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main39
+                   Main.main20) -}
+65759c2bea9b043eac1b53807d3df144
+  main190 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case Chatterbot.match
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        Main.main147
+                        Main.main143
+                        Main.main153 of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ [GHC.Types.Char]
+                        (Chatterbot.substitute
+                           @ GHC.Types.Char
+                           GHC.Classes.$fEqChar
+                           Main.main147
+                           Main.main144
+                           x) }) -}
+5d8c3da0969e8ff4efa3750115a88599
+  main191 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Given testcase in instructions"#) -}
+99be5296619a97242d4e8becbce466db
+  main192 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Unit tests for transformationApply"#) -}
+806eefc19bf94c2a7495c8691e212d87
+  main193 :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup Main.main217 Main.main194) -}
+eca7cf689193606282328c15ceb924a5
+  main194 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main213
+                   Main.main195) -}
+dc48114bf4f4b45d345a7e21ee46863b
+  main195 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main205
+                   Main.main196) -}
+466e39d8f8af96298a0a004188a9326d
+  main196 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main197
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+299a701467647ed3a8c7bb0bc41d0d0f
+  main197 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main204
+                   Main.main198
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+9bedb794dee7e9ab1a3474cf9ed8b47d
+  main198 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ [GHC.Types.Char])
+                        Main.main199
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+2390bee657d958ab902d9bbdf42a4ccb
+  main199 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case Chatterbot.match
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        Main.main147
+                        Main.main202
+                        Main.main201 of wild2 {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x1
+                   -> GHC.Base.Just
+                        @ [GHC.Types.Char]
+                        (GHC.Types.: @ GHC.Types.Char Main.main200 x1) }) -}
+0b7da8e9cbb8a097aea90ca0fe32e06d
+  main2 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main10
+                   Main.main3) -}
+c005f9e14b2083b3c817bf6f9738d2e5
+  main20 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main21
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+8538ac2c6ba99344e7e0ba072c966dba
+  main200 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'b'#) -}
+cd0219e33b5ee7c5212c03de3b4a2bc3
+  main201 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "edobe"#) -}
+9a3779a7921ba0c9d1f1c1a1a1f9761e
+  main202 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Main.main147
+                   Main.main203) -}
+3e78792a14de1d407e897904bf7a31b3
+  main203 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "do"#) -}
+a67b5fefb70e641170ff0335e1a700bb
+  main204 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Case 3, instructions"#) -}
+09a599fd2e44b81efcbc53c89b4256bf
+  main205 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main212
+                   Main.main206
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+eda5b2d70e0cf2fc79e423c80409527c
+  main206 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main210
+                        Main.main207
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+970e95f3c4f0ac987fbb1174c41c604a
+  main207 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case Chatterbot.match
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        Main.main147
+                        Main.main202
+                        Main.main209 of wild2 {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x1
+                   -> GHC.Base.Just
+                        @ [GHC.Types.Char]
+                        (GHC.Types.: @ GHC.Types.Char Main.main208 x1) }) -}
+1b1214561e07e1a34995cdb7bdee8975
+  main208 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'd'#) -}
+b9f90e70dd9b7d93e7d885a559e95060
+  main209 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "obedo"#) -}
+29bd68a2e9730b1d4f068bfa85d07a60
+  main21 :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup Main.main38 Main.main22) -}
+b8f4ff19df82fccef07825dffe3c1ee1
+  main210 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.Just @ [GHC.Types.Char] Main.main211) -}
+841ead3e61340182d13d626f4f41af06
+  main211 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "dobe"#) -}
+74d3d830efdb94c4206e6b4a15d48a0a
+  main212 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Case 2, instructions"#) -}
+08d923bfa85d97fae053e5091c945e77
+  main213 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main216
+                   Main.main214
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+0c0243d74ced05653965c10174c456f3
+  main214 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ [GHC.Types.Char])
+                        Main.main215
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+300f30062201e857568d53f568a53288
+  main215 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case Chatterbot.match
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        Main.main147
+                        Main.main202
+                        Main.main203 of wild2 {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x1
+                   -> GHC.Base.Just
+                        @ [GHC.Types.Char]
+                        (GHC.Types.: @ GHC.Types.Char Main.main200 x1) }) -}
+c98dbe2576c8e1af3270a57f3de4bb2f
+  main216 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Case 1, instructions"#) -}
+2b245779eeacec2120bbc3515c36f87d
+  main217 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Unit tests for longerWildcardMatch"#) -}
+5bd4f9d81ba6ff6a7d4157e207f43cbe
+  main218 :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup Main.main235 Main.main219) -}
+abb9c6bfcb5aaf75f0014b927241830c
+  main219 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main230
+                   Main.main220) -}
+677e5108563d4909c5de89049ddb7db8
+  main22 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main32
+                   Main.main23) -}
+b447a0552aedf5320c54ae356e29ae4c
+  main220 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main226
+                   Main.main221) -}
+964c4655d7cba5b7dba6b33fdf7f842d
+  main221 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main222
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+bbab17d32d52af59cafa02f44b3af91b
+  main222 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main204
+                   Main.main223
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+45301f9ced4040941f716c88c137183c
+  main223 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ [GHC.Types.Char])
+                        Main.main224
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+bff6212f1fe6d67e1d5b0889b7ddde86
+  main224 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case Chatterbot.match
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        Main.main147
+                        Main.main203
+                        Main.main201 of wild2 {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x1
+                   -> GHC.Base.Just @ [GHC.Types.Char] Main.main225 }) -}
+9477ed79c43f9ab4fea42a27dbbec9a2
+  main225 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Main.main200
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+21961e351341f56e6cf09927e01bb0aa
+  main226 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main212
+                   Main.main227
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+1df0249a09005a52d6a573d257e420b7
+  main227 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ [GHC.Types.Char])
+                        Main.main228
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+7c3e50b4d6eb178e6be66c96fbdff9f0
+  main228 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case Chatterbot.match
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        Main.main147
+                        Main.main203
+                        Main.main209 of wild2 {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x1
+                   -> GHC.Base.Just @ [GHC.Types.Char] Main.main229 }) -}
+ecedd64cfceb130498f424cd3f02eaa7
+  main229 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Main.main208
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+8dc50c175ff69b143feb3bdf1279cd77
+  main23 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main24
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+fef97d94b1a4639bf72b18381bec7b15
+  main230 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main216
+                   Main.main231
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+43272ecf7cfab2dd803353d7ae5390bf
+  main231 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main233
+                        Main.main232
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+1f9c3be9cdd7033b03eaaf948296d823
+  main232 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case Chatterbot.match
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        Main.main147
+                        Main.main203
+                        Main.main203 of wild2 {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x1
+                   -> GHC.Base.Just @ [GHC.Types.Char] Main.main225 }) -}
+4f69b7cde3bcd56dae13855f1a2e35e1
+  main233 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.Just @ [GHC.Types.Char] Main.main234) -}
+a9ce8a08c68aa4c0d6a814ff13c2939a
+  main234 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "b"#) -}
+3f729d3b0b026443240ff5ec28963550
+  main235 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Unit tests for singleWildcardMatch"#) -}
+5a416b5d61a79203f8e8f190386415f0
+  main236 :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup Main.main344 Main.main237) -}
+6cb585fa963220e306d769881cbdb014
+  main237 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main337
+                   Main.main238) -}
+5daa9732f4cc03dbd161893699ddacbb
+  main238 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main331
+                   Main.main239) -}
+1152085d16af33079a98ee88e01e1c5a
+  main239 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main322
+                   Main.main240) -}
+7703d9d09cc138f647838f4fb9fd40b5
+  main24 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main31
+                   Main.main25
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+eb2d1c22afed362fe63f1bb7bf2420ba
+  main240 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main315
+                   Main.main241) -}
+20d469c948ba67a76237d76d014136bd
+  main241 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main308
+                   Main.main242) -}
+d6a2cd67fe4ddba3af5a21c83b4ad387
+  main242 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main303
+                   Main.main243) -}
+8ecff27f59f099b28bf1dd65497619ec
+  main243 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main298
+                   Main.main244) -}
+7c7f5445ec745f2e6ecacdf376839971
+  main244 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main292
+                   Main.main245) -}
+d0b29e5a93bf648d1bc444c98fcb5723
+  main245 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main289
+                   Main.main246) -}
+db8908e690704c38f35fa8715571bf11
+  main246 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main286
+                   Main.main247) -}
+ad99a32af24e766b1512f90e6b94f782
+  main247 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main282
+                   Main.main248) -}
+3d430ba9e04d25a552a117284a36e8e5
+  main248 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main278
+                   Main.main249) -}
+92299522e9d061075ca75c49ce815bf0
+  main249 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main274
+                   Main.main250) -}
+8e501f420e932c2f5838e72e041226b3
+  main25 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ Chatterbot.Phrase
+                        GHC.Classes.$fEq[]_$s$fEq[]2
+                        GHC.Show.$fShow[]_$s$fShow[]2
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main29
+                        Main.main26
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+381c63b4a2d95ed26a603736c743b1cb
+  main250 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main268
+                   Main.main251) -}
+52c4f5059a8f74e9ce1c8a2b6af9e810
+  main251 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main261
+                   Main.main252) -}
+7be05f72133d62247dc5333233cdd355
+  main252 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main253
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+3c84803765c0a44428d4b99d1312bedc
+  main253 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main260
+                   Main.main254
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+75240f6d190445bf37c15331712d7436
+  main254 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main258
+                        Main.main255
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+3c0931180fa49943ca330ee9a0c348e8
+  main255 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main147
+                   Main.main257
+                   Main.main256) -}
+50a8bb5385456ca72a5bfa4e54372a95
+  main256 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "aaXbb"#) -}
+19f35e4a5b78f37cea7765d3312aa17b
+  main257 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "*X*"#) -}
+5b2340927a8a2aa9d3905427feb83079
+  main258 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.Just @ [GHC.Types.Char] Main.main259) -}
+fb29db1d51d578fe862f723156d8efae
+  main259 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "aa"#) -}
+12c6aa08165914d3c78635bc14b4071a
+  main26 :: [[GHC.Types.Char]]
+  {- Unfolding: (Utilities.fix
+                   @ [[GHC.Types.Char]]
+                   GHC.Classes.$fEq[]_$s$fEq[]2
+                   Chatterbot.chatterbot4
+                   Main.main27) -}
+a6c07e0d14e1e5b87825f40df602c840
+  main260 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Matching one ending"#) -}
+e0b8ff9e2ba388c24e7df2b8b1263af4
+  main261 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main267
+                   Main.main262
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+a888a4065cc2968146715e271f382c6d
+  main262 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main265
+                        Main.main263
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+2b57c04876f4c967043ee97197013483
+  main263 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main147
+                   Main.main257
+                   Main.main264) -}
+440097d917886d43a6cd3121ac319bc8
+  main264 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "aXb"#) -}
+3b471c48339685129cde383427a84ed3
+  main265 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.Just @ [GHC.Types.Char] Main.main266) -}
+8835a92d0d8f6c0936733dbb979f9501
+  main266 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "a"#) -}
+922d1037efcd99ab5c32d5d705fc570e
+  main267 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Matching 1 beginning"#) -}
+e54f4682d9e9e617925b8fccb49af89b
+  main268 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main273
+                   Main.main269
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+c0e1a0a051e4919dc4b2039cd7029d0f
+  main269 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main272
+                        Main.main270
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+bcff997a4d3bfd45aec4ed4faffc9a71
+  main27 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Main.main28) -}
+606b1c6109f5719160a00a36de14e6e1
+  main270 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main147
+                   Main.main59
+                   Main.main271) -}
+b8398c844e5d4cdcb4aeeb0c1a810e1d
+  main271 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "abba"#) -}
+85504aeefe71eb1a150b62b48187b52a
+  main272 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.Just @ [GHC.Types.Char] Main.main271) -}
+ad6e04beeaef4cdc08b10d0cba43e175
+  main273 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Matching word"#) -}
+b075d04e4306d97438ad17b6d1197fce
+  main274 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main277
+                   Main.main275
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+430003622d0eeb6d64301344263ba3d2
+  main275 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main265
+                        Main.main276
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+c1f3972e4856e2b195b25e44610adef2
+  main276 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main147
+                   Main.main59
+                   Main.main266) -}
+696811b3cc322c3ba210155959640043
+  main277 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Single matching letter"#) -}
+f418a4f3c3514f4702cb9935bfd69afd
+  main278 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main281
+                   Main.main279
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+4c980319201599d14067f68a955a07e2
+  main279 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main174
+                        Main.main280
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+ea011313c55fa3d8b0a29c2b2d6641b7
+  main28 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "i am very very very very tired"#) -}
+787a0a3ebdd21db27c21ac8f981c4fec
+  main280 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main147
+                   Main.main266
+                   Main.main266) -}
+551f3bd8db490b952ea50287dcebec61
+  main281 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Empty matching"#) -}
+14b3aa98fa335e7a376048d56b812abd
+  main282 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main285
+                   Main.main283
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+12cef0d22ce237e92087956a7024e44c
+  main283 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ [GHC.Types.Char])
+                        Main.main284
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+f2bf56c5f2d83c488d887de7858a5d3a
+  main284 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main147
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Main.main271) -}
+b7c16c4d0b69ebae54389b037c125397
+  main285 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Clearly not matching"#) -}
+a1899e2665c1ef03a0288ee4e684621b
+  main286 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main285
+                   Main.main287
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+3a2731c7b686ef5afdc01309a62cdb5b
+  main287 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ [GHC.Types.Char])
+                        Main.main288
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+ddfb9e405909ba6488ac7b26a23f1871
+  main288 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main147
+                   Main.main271
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ef2b85789db14c6fc832f4b4c69be819
+  main289 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main291
+                   Main.main290
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+fe9ad6c427eac781886b9d416f8918e9
+  main29 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Main.main30) -}
+d56f545c4a0dd716b35fb0b9282387ad
+  main290 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main174
+                        Main.main173
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+6b3f6e0f2003e67eae3636aa97223a5d
+  main291 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Clearly matching"#) -}
+3b5992869a0de97ff1491dddb9de858b
+  main292 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main297
+                   Main.main293
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+78d2595ef7638b4357f39ab0b40a2b01
+  main293 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ [GHC.Types.Char])
+                        Main.main294
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+207cc32b998340a7e188dab00763cf25
+  main294 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main147
+                   Main.main296
+                   Main.main295) -}
+a265f83a96f4e2f04c8d9dc75637efa4
+  main295 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "bedobe"#) -}
+90e4e0e582320c86405f5019bde484ed
+  main296 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "*do"#) -}
+5691802f6179b5ba9c4f2c525a2e3669
+  main297 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "different endings"#) -}
+986e2374755b73806bd6731eaba46b88
+  main298 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main302
+                   Main.main299
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+b0022781c0fd9824484e396af6e7c496
+  main299 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main210
+                        Main.main300
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+588bbcb55c4d2d11dcb3ca214f271890
+  main3 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main4
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+d3c9a4e75980cb95670ed077fcd39ac3
+  main30 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "i am tired"#) -}
+6fdc4e5dc697a3116554b7ed05a8b7e3
+  main300 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main147
+                   Main.main296
+                   Main.main301) -}
+c13fa0b4a9c3090f04b389521f738e6d
+  main301 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "dobedo"#) -}
+469024312a9d7c1f7c4e2312d704f395
+  main302 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Finds bode"#) -}
+e57f303eb1e13936833a1abc28a6b608
+  main303 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main307
+                   Main.main304
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+3a74eace965fdf852643c8c819c84ccd
+  main304 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main233
+                        Main.main305
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+eab64b587e7c0e166417240ec204bc35
+  main305 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main147
+                   Main.main296
+                   Main.main306) -}
+7df8d7ca6c008e656ac1144ca2a8d4d2
+  main306 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "bdo"#) -}
+57fea185e41a1b9bebab0e668e5ad300
+  main307 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Finds b"#) -}
+6ff727d977761f4706d1a71c2d3f0427
+  main308 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main314
+                   Main.main309
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+e38a2690a6871c9bdfbe03fde30a794b
+  main309 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ [GHC.Types.Char])
+                        Main.main310
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+8761a624d6d66b110b3781ec68d1c6c3
+  main31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Reduce to fixed point"#) -}
+13da62e69dd19a161d6a45ba7ad164f9
+  main310 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main313
+                   Main.main312
+                   Main.main311) -}
+2952d4009c9cb5b03bc609f5c339c30f
+  main311 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2*7+3"#) -}
+89660ab8c2d719489674191b54f02d9b
+  main312 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2*x+3+x"#) -}
+b3be0b6bf577d82e6ad6d3bc9d1ff045
+  main313 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'x'#) -}
+db8fc6c336dec53a6bb2d809c820b091
+  main314 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "No match clearly"#) -}
+6c9cce2e0eb389a3e62bb862c1f731f6
+  main315 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main321
+                   Main.main316
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+7682ea0514e70e4bfdb233ee257d970d
+  main316 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main320
+                        Main.main317
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+244957e1ae9ff2d6826f4fc708cd421e
+  main317 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main147
+                   Main.main319
+                   Main.main318) -}
+20227c8dac99c52fcd5cd5424750d4c7
+  main318 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "you and me"#) -}
+aed6c19c4c06b77df85d4e4d3cee0455
+  main319 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "* and *"#) -}
+b838e753693ff06c7ad2f6eb0e9e9bb5
+  main32 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main37
+                   Main.main33
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+013e180babe28c4822b03c8c1e01013e
+  main320 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.Just @ [GHC.Types.Char] Main.main129) -}
+2fbb52f3edd433b6562c7b354acf695f
+  main321 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Finds you"#) -}
+7ac42d17d8aafa61d8cbff70999b6180
+  main322 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main330
+                   Main.main323
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+66eb7af0d7dfc37382c9504aeb7a7562
+  main323 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Integer.Type.Integer])
+                        Main.$s$fEqMaybe3
+                        Main.$s$fShowMaybe3
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main329
+                        Main.main324
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+680db85b280a75bf8eb097ac492dce43
+  main324 :: GHC.Base.Maybe [GHC.Integer.Type.Integer]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   Main.main327
+                   Main.main325
+                   Main.main325) -}
+ca040af48f260bd132295ea8523612de
+  main325 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (GHC.Enum.enumDeltaToInteger
+                   Main.main328
+                   Main.main327
+                   Main.main326) -}
+adb9b4c714b839e0d2c593408485963a
+  main326 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (5) -}
+a0a11f6bff77ee057bb9d71131f449ad
+  main327 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+6ce7bc6ab72ad161c516e943c58b73ba
+  main328 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+64dca2089a1e3cd6ee532243bd126711
+  main329 :: GHC.Base.Maybe [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Base.Just
+                   @ [GHC.Integer.Type.Integer]
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+6d3e48660ddf948182ae5adfeaf205c0
+  main33 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ Chatterbot.Phrase
+                        GHC.Classes.$fEq[]_$s$fEq[]2
+                        GHC.Show.$fShow[]_$s$fShow[]2
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main29
+                        Main.main34
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+5b507ff3e2153d207df0bd03ccce39e7
+  main330 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Numbers"#) -}
+d01fec075cf47caf918811f241f1bf09
+  main331 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main336
+                   Main.main332
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+b13cf95f0d9dde22820c6504545cacd0
+  main332 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ [GHC.Types.Char])
+                        Main.main333
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+80ac7113479ed2767df5966dca4b9fe6
+  main333 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main147
+                   Main.main335
+                   Main.main334) -}
+545bdebcbf8b02bf77648eb6edb518ff
+  main334 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "gandalf"#) -}
+b6ae75fcdcacab1077c2cb7ca4ea1e08
+  main335 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "frodo"#) -}
+bfef3193f25348fafbaa87d1754634df
+  main336 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Plain diff words"#) -}
+67dd9b33cc6b716fb4f8dcef08735be4
+  main337 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main343
+                   Main.main338
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+d21120c60e3e338f0b24d546af76d857
+  main338 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Main.$s$fEqMaybe
+                        Main.$s$fShowMaybe
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main341
+                        Main.main339
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+a2a42409c870cfc5a9966df139ce48b1
+  main339 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.match
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main313
+                   Main.main340
+                   Main.main311) -}
+8de439dc70a81152e38cf3a6b2b729ba
+  main34 :: [[GHC.Types.Char]]
+  {- Unfolding: (Utilities.fix
+                   @ [[GHC.Types.Char]]
+                   GHC.Classes.$fEq[]_$s$fEq[]2
+                   Chatterbot.chatterbot4
+                   Main.main35) -}
+f66bcd78c3c3d82d1dc1c47bc393a207
+  main340 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2*x+3"#) -}
+e7d39cb77a5d8071b80c10c2fdc7e2e7
+  main341 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.Just @ [GHC.Types.Char] Main.main342) -}
+cfce8898788e4658b28c9f6482faf743
+  main342 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "7"#) -}
+b0e89b4b1de75d16adc6c92b3cc01f1f
+  main343 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Single match"#) -}
+466ab7e7f8c45582fb0b2c9ab74c2f13
+  main344 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Unit tests for match"#) -}
+6ce3e3ad2f5b028bc1ebc37b1c98781f
+  main345 :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup Main.main374 Main.main346) -}
+a79fd6f1d20d53a2b118a055d222cf2b
+  main346 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main367
+                   Main.main347) -}
+38574052da5213759d2ae8682fab11ac
+  main347 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main357
+                   Main.main348) -}
+951bdb20e095a143b3a64f2f5638e181
+  main348 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main349
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+deacd8ceec4285016f3a29b7ec558a96
+  main349 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main356
+                   Main.main350
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+92ddf5f16b3b61de9142ccc2bdad513f
+  main35 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Main.main36) -}
+1d3029dad6c088a2c2779b2651d5205d
+  main350 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [GHC.Integer.Type.Integer]
+                        Main.$s$fEqMaybe_$s$fEq[]
+                        Main.$s$fShowMaybe_$s$fShow[]
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Types.[] @ GHC.Integer.Type.Integer)
+                        Main.main351
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+8db72ed5634d185dbe6714c9eb14133c
+  main351 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Chatterbot.substitute
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   Main.main328
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)
+                   Main.main352) -}
+e6408acbba09d81b7671c6ad1403efb9
+  main352 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main328
+                   Main.main353) -}
+58a041f0cc3cce5a8d1a9c62545b118f
+  main353 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main327
+                   Main.main354) -}
+52c6e4bc54765e4fd0b85417b2e84d1a
+  main354 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main355
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+0113a48a3dd82c220a970a50b14eb6c4
+  main355 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+840490ae4de33d826c0fd91455c24b89
+  main356 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Empty"#) -}
+234c6a3a044121c0f9a122b863f070f3
+  main357 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main366
+                   Main.main358
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+ec8ac69e8468212f8e4a08464e468328
+  main358 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [GHC.Integer.Type.Integer]
+                        Main.$s$fEqMaybe_$s$fEq[]
+                        Main.$s$fShowMaybe_$s$fShow[]
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main364
+                        Main.main359
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+5f002a629789e5bf2256a017d250f023
+  main359 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Chatterbot.substitute
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   Main.main328
+                   Main.main360
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+8b7c52bdd4b8a75e722f666184301dca
+  main36 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "i am very tired"#) -}
+858b4b26856bd5b41297f9b7ab29a2c0
+  main360 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main328
+                   Main.main361) -}
+7e6b44843ee0a2045cc43121b9218ec7
+  main361 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main327
+                   Main.main362) -}
+078f5f145e721cfdcb0dfc7d4676f7e6
+  main362 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main355
+                   Main.main363) -}
+f30725750e35161bccd8b2407eb82491
+  main363 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main328
+                   Main.main354) -}
+bab23a3bec8b84a1eff021383ae2badc
+  main364 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main327
+                   Main.main365) -}
+dfae5ddfeff4f93ce68edd484d78d909
+  main365 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main355
+                   Main.main354) -}
+ac03fedc33c9d895d18944415a6fddcd
+  main366 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Extra"#) -}
+9f68808c1ec898584e1673e4f3ec410b
+  main367 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main373
+                   Main.main368
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+d393073ad46907bbfc2c7f0989b6991b
+  main368 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [GHC.Types.Char]
+                        GHC.Classes.$fEq[]_$s$fEq[]1
+                        GHC.Show.$fShow[]_$s$fShow[]1
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main372
+                        Main.main369
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+c05144da85f22e4bb344a4a84471c930
+  main369 :: [GHC.Types.Char]
+  {- Unfolding: (Chatterbot.substitute
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Main.main313
+                   Main.main371
+                   Main.main370) -}
+cc19c77d10092763529a5091845a6703
+  main37 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Reduce: i am very tired"#) -}
+5ebf2d5ad98e979bd6b928d904097001
+  main370 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "5.37"#) -}
+9e8d93d413efd9fa46eca54cc7aeaf01
+  main371 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "3*cos(x) + 4 - x"#) -}
+c48f6b317bfc0421ac2b02451b41727b
+  main372 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "3*cos(5.37) + 4 - 5.37"#) -}
+ec4ab1701bedf71c7be4ce1243d2b3d7
+  main373 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Given testcase"#) -}
+1f69625432ca11360304e881d4079f74
+  main374 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Unit tests for substitute"#) -}
+49a828989fdf717f69919837a49338ce
+  main375 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "All unit tests"#) -}
+c17a5e34b3c2441352adaeb493caf6f3
+  main376 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "All tests"#) -}
+b5035e0a354e69fc69c8e913ea42f4db
+  main377 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+7729bd2c69f06f2d37f5283a9f0781e2
+  main38 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Unit tests for reduce function"#) -}
+e1b3bfadc91688a4e6eb20fce142e220
+  main39 :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup Main.main66 Main.main40) -}
+71860c9d3290d663f46abc46f5f394a5
+  main4 :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup Main.main9 Main.main5) -}
+e14f23fa37dc1b9935b7360e413d7be7
+  main40 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main41
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+7450b70b768e5c613a6f6cffbb4b2162
+  main41 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main65
+                   Main.main42
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+4376417fd056d17b01afc963076e4655
+  main42 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ Chatterbot.BotBrain
+                        Main.$s$fEq[]
+                        Main.$s$fShow[]
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main53
+                        Main.main43
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+b10a562e688f280b5710dd730915fd17
+  main43 :: [([GHC.Base.String], [[GHC.Base.String]])]
+  {- Unfolding: (GHC.Types.:
+                   @ ([GHC.Base.String], [[GHC.Base.String]])
+                   Main.main44
+                   (GHC.Types.[] @ ([GHC.Base.String], [[GHC.Base.String]]))) -}
+e0bd160d0a0cc8937859bd6dd48e2e8e
+  main44 :: ([GHC.Base.String], [[GHC.Base.String]])
+  {- Unfolding: ((Main.main50, Main.main45)) -}
+908b45bdaa76dd5d28212b65fcc61df0
+  main45 :: [[GHC.Base.String]]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Types.Char]
+                   @ [GHC.Base.String]
+                   Chatterbot.chatterbot6
+                   Main.main46) -}
+00e056d263fb08980163533bbccbc7a5
+  main46 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main49
+                   Main.main47) -}
+6b4fcf01485b09024d9c965e7cdeff1d
+  main47 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main48
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+c7c4a03de844afdcd2a4516a8dc602d8
+  main48 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Hi *"#) -}
+cecb6100b49371a5c39834a7cf66e4f7
+  main49 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Hello *"#) -}
+b415be88061038f8634a3284e771ee8a
+  main5 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main6
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+f510b23c5e4c6bb143e4b157c5754067
+  main50 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Main.main51) -}
+52709d78ff7c9ef871150ddf2c394ac4
+  main51 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.map
+                   @ GHC.Types.Char
+                   @ GHC.Types.Char
+                   GHC.Unicode.toLower
+                   Main.main52) -}
+389c66f2feb7fcf2685fee1f9393f838
+  main52 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Hej *"#) -}
+c9cd85d80e8fc8bcbff5d80796246e0a
+  main53 :: [(Chatterbot.Phrase, [Chatterbot.Phrase])]
+  {- Unfolding: (GHC.Types.:
+                   @ (Chatterbot.Phrase, [Chatterbot.Phrase])
+                   Main.main54
+                   (GHC.Types.[] @ (Chatterbot.Phrase, [Chatterbot.Phrase]))) -}
+74de9089ac47f17569498c73090c3bfa
+  main54 :: ([GHC.Base.String], [Chatterbot.Phrase])
+  {- Unfolding: ((Main.main63, Main.main55)) -}
+11c4be3a89405ffd0c39bf8f2456316f
+  main55 :: [Chatterbot.Phrase]
+  {- Unfolding: (GHC.Types.:
+                   @ Chatterbot.Phrase
+                   Main.main61
+                   Main.main56) -}
+8b7f3eb28837539932918303041a9913
+  main56 :: [Chatterbot.Phrase]
+  {- Unfolding: (GHC.Types.:
+                   @ Chatterbot.Phrase
+                   Main.main57
+                   (GHC.Types.[] @ Chatterbot.Phrase)) -}
+568776d8cf6176906cd588b7220d7cf2
+  main57 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main60
+                   Main.main58) -}
+4a60868c13ded0a895a135476e0d28d8
+  main58 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main59
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+768dd1c26e6f98f61ed6654228bab0fa
+  main59 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "*"#) -}
+89d7bbd344927a27fd99a3e010055a9f
+  main6 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Main.main8
+                   Main.main7
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+8531c4adbffca07e6d052b7b513659d3
+  main60 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "hi"#) -}
+57cfdaeec80f73797f2437f7a0c5e4bd
+  main61 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main62
+                   Main.main58) -}
+897d9a618821df6d0d7dfb9366c56a1b
+  main62 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "hello"#) -}
+bfac8686b0ed2c58968c84416073dcb3
+  main63 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Main.main64
+                   Main.main58) -}
+1405b02786ea589ad1fe6e199b5e657a
+  main64 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "hej"#) -}
+04af9dacc572a10d701159c114da74f6
+  main65 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "An small example"#) -}
+6c2d0a540810b801eff467154763adb0
+  main66 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Unit tests for compile"#) -}
+34fd543fed9e64d40d0399e200e4547d
+  main67 :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup Main.main89 Main.main68) -}
+5fd184cd034603c2078bc495df53a0d0
+  main68 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main81
+                   Main.main69) -}
+1a7e38b1bc21ef938a5fa2f225729021
+  main69 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main70
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+246cc16abc24999b4097eb96f7257f4f
+  main7 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: Test.QuickCheck.Random.QCGen) (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ GHC.Types.Char
+                   @ ([GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShowChar
+                   Main.$stestProperty2
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Test.QuickCheck.Arbitrary.$fArbitraryChar1
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <GHC.Types.Char>_R))
+                   Test.QuickCheck.Arbitrary.$fArbitraryChar_$cshrink
+                   Main.main_f
+                   eta
+                   eta1) -}
+86ec7babbaed9a7dff884aaaa11ccc3e
+  main70 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main80
+                   Main.main71
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+256feb75ab1a0128c98ff4668cd5b2c0
+  main71 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ Chatterbot.Phrase
+                        GHC.Classes.$fEq[]_$s$fEq[]2
+                        GHC.Show.$fShow[]_$s$fShow[]2
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main79
+                        Main.main72
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+4dd9860233a922291b5680c5d5771416
+  main72 :: Chatterbot.Phrase
+  {- Unfolding: (case Chatterbot.chatterbot_$smatch
+                        Chatterbot.reductions41
+                        Main.main77
+                        Main.main75 of wild {
+                   GHC.Base.Nothing
+                   -> case Chatterbot.chatterbot_go1
+                             (GHC.Types.[] @ (GHC.Base.Maybe [[GHC.Types.Char]]))
+                             (GHC.Base.Nothing @ [[GHC.Types.Char]]) of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.[] @ [GHC.Types.Char]
+                        GHC.Base.Just v -> v }
+                   GHC.Base.Just x
+                   -> case Chatterbot.chatterbot_go1
+                             (GHC.Types.[] @ (GHC.Base.Maybe [[GHC.Types.Char]]))
+                             (GHC.Base.Just
+                                @ [[GHC.Types.Char]]
+                                (Chatterbot.chatterbot_$ssubstitute
+                                   Chatterbot.reductions41
+                                   Main.main73
+                                   (GHC.Base.map
+                                      @ [GHC.Types.Char]
+                                      @ [GHC.Types.Char]
+                                      Chatterbot.reflect1
+                                      x))) of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.[] @ [GHC.Types.Char]
+                        GHC.Base.Just v -> v } }) -}
+d564ff92b01921d0f959d3017f0ba240
+  main73 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Main.main74) -}
+67fb805912825aa5624550a4cc687afb
+  main74 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you hate * ?"#) -}
+06418727fae9ecd4ed0262398b8adedd
+  main75 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Main.main76) -}
+d0c759790dfd6b081dba6b0ccb7dbe23
+  main76 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ARGH!"#) -}
+6d0adf79e765bbe1f140157693f4b265
+  main77 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Main.main78) -}
+3e45f2a19626623d8a82db38fb79ccce
+  main78 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I hate *"#) -}
+d7805d488bdd5d9420d6f68b52c9e4ac
+  main79 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+2ce6a4a624313f861741990fe4858700
+  main8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "substitute same as MissingH replace"#) -}
+7dbe9eb0e519bebe155279f5073025be
+  main80 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Given testcase nbr 2"#) -}
+1db0d199e230377ba7a8b8d2a259f58f
+  main81 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main88
+                   Main.main82
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+393ba7e93eac38d78cc4d917bd67008b
+  main82 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ Chatterbot.Phrase
+                        GHC.Classes.$fEq[]_$s$fEq[]2
+                        GHC.Show.$fShow[]_$s$fShow[]2
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main86
+                        Main.main83
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+4e027d522342d9a0e16bb1d5541b1b2f
+  main83 :: Chatterbot.Phrase
+  {- Unfolding: (case Chatterbot.chatterbot_$smatch
+                        Chatterbot.reductions41
+                        Main.main77
+                        Main.main84 of wild {
+                   GHC.Base.Nothing
+                   -> case Chatterbot.chatterbot_go1
+                             (GHC.Types.[] @ (GHC.Base.Maybe [[GHC.Types.Char]]))
+                             (GHC.Base.Nothing @ [[GHC.Types.Char]]) of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.[] @ [GHC.Types.Char]
+                        GHC.Base.Just v -> v }
+                   GHC.Base.Just x
+                   -> case Chatterbot.chatterbot_go1
+                             (GHC.Types.[] @ (GHC.Base.Maybe [[GHC.Types.Char]]))
+                             (GHC.Base.Just
+                                @ [[GHC.Types.Char]]
+                                (Chatterbot.chatterbot_$ssubstitute
+                                   Chatterbot.reductions41
+                                   Main.main73
+                                   (GHC.Base.map
+                                      @ [GHC.Types.Char]
+                                      @ [GHC.Types.Char]
+                                      Chatterbot.reflect1
+                                      x))) of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.[] @ [GHC.Types.Char]
+                        GHC.Base.Just v -> v } }) -}
+53e2c97c9c1ec9b7c1d5112c9a230a69
+  main84 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Main.main85) -}
+eb40b033c4af9e338704914670c4468a
+  main85 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I hate my mother"#) -}
+2b92d2ad6803d39e5f95d3b2cf030785
+  main86 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Main.main87) -}
+855826bb11795aab1752424f6a043be7
+  main87 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you hate your mother ?"#) -}
+2abfcf6d0110fce9860b9714684d01bb
+  main88 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Given testcase nbr 1"#) -}
+c1954771f6cc866eff4960eec210b2d3
+  main89 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Unit tests for rulesApply"#) -}
+42e8d3f1ff0df0ca8e00c4a8f2d577dd
+  main9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "All property tests"#) -}
+cc99f2f881405db5899ed1d3009fe189
+  main90 :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup Main.main131 Main.main91) -}
+0d82940ef10a0332e118a5f2df80680c
+  main91 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.main92
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+5b039a4864b180af2a1cfa4c42cf57b5
+  main92 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.main130
+                   Main.main93
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+939c6724f3d881586b61de1511eff4af
+  main93 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ Chatterbot.Phrase
+                        GHC.Classes.$fEq[]_$s$fEq[]2
+                        GHC.Show.$fShow[]_$s$fShow[]2
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Main.main120
+                        Main.main94
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+91a692343e28286180db531a0a27b152
+  main94 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.main119
+                   Main.main95) -}
+cd4aad32ca58eaafdf5c2e2556e1ce53
+  main95 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.main117
+                   Main.main96) -}
+27f4714cd84bbe5efe2155a248d996d6
+  main96 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.main115
+                   Main.main97) -}
+af5d983c3866cc347764e1b7bf9d13de
+  main97 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.main113
+                   Main.main98) -}
+76ff0ca8b84045a15f2869ba48c4fcc5
+  main98 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.main111
+                   Main.main99) -}
+c41611d187b7ae77c3975568febc14cc
+  main99 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.main109
+                   Main.main100) -}
+756bc51f0c4901e048cefc79ae5f989b
+  main_f ::
+    GHC.Types.Char
+    -> [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><S,U><L,U>,
+     Unfolding: (\ (wild :: GHC.Types.Char)
+                   (list :: [GHC.Types.Char])
+                   (rep :: [GHC.Types.Char]) ->
+                 case Data.List.Utils.split
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        (GHC.Types.: @ GHC.Types.Char wild (GHC.Types.[] @ GHC.Types.Char))
+                        list of wild1 {
+                   []
+                   -> GHC.Base.eqString
+                        (Chatterbot.substitute
+                           @ GHC.Types.Char
+                           GHC.Classes.$fEqChar
+                           wild
+                           list
+                           rep)
+                        (GHC.Types.[] @ GHC.Types.Char)
+                   : x xs
+                   -> GHC.Base.eqString
+                        (Chatterbot.substitute
+                           @ GHC.Types.Char
+                           GHC.Classes.$fEqChar
+                           wild
+                           list
+                           rep)
+                        (Data.List.Utils.replace1
+                           @ GHC.Types.Char
+                           (GHC.Types.:
+                              @ [GHC.Types.Char]
+                              x
+                              (Data.OldList.prependToAll @ [GHC.Types.Char] rep xs))) }) -}
+b46edb296c8ddeef5f5d01193fda263d
+  main_x :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "i"#) -}
+20e08ea350573db687f7f0e336fca59f
+  presentations :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Main.frenchPresentation
+                   Main.main140) -}
+"SPEC/Main $fArbitrary[]_$cshrink @ Char" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                            GHC.Types.Char)
+  Test.QuickCheck.Arbitrary.$fArbitrary[]_$cshrink @ GHC.Types.Char
+                                                   $dArbitrary
+  = Main.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+"SPEC/Main $fEq(,) @ [String] @ [Phrase]" [ALWAYS] forall ($dEq1 :: GHC.Classes.Eq
+                                                                      [Chatterbot.Phrase])
+                                                          ($dEq :: GHC.Classes.Eq [GHC.Base.String])
+  GHC.Classes.$fEq(,) @ [GHC.Base.String]
+                      @ [Chatterbot.Phrase]
+                      $dEq
+                      $dEq1
+  = Main.$s$fEq(,)
+"SPEC/Main $fEqMaybe @ [Char]" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                          [GHC.Types.Char])
+  GHC.Base.$fEqMaybe @ [GHC.Types.Char] $dEq = Main.$s$fEqMaybe
+"SPEC/Main $fEqMaybe @ [Integer]" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                             [GHC.Integer.Type.Integer])
+  GHC.Base.$fEqMaybe @ [GHC.Integer.Type.Integer] $dEq
+  = Main.$s$fEqMaybe3
+"SPEC/Main $fEq[] @ (Phrase, [Phrase])" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                   (Chatterbot.Phrase,
+                                                                    [Chatterbot.Phrase]))
+  GHC.Classes.$fEq[] @ (Chatterbot.Phrase, [Chatterbot.Phrase]) $dEq
+  = Main.$s$fEq[]
+"SPEC/Main $fEq[] @ Integer" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                        GHC.Integer.Type.Integer)
+  GHC.Classes.$fEq[] @ GHC.Integer.Type.Integer $dEq
+  = Main.$s$fEqMaybe_$s$fEq[]
+"SPEC/Main $fEq[] @ [String]" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                         [GHC.Base.String])
+  GHC.Classes.$fEq[] @ [GHC.Base.String] $dEq
+  = Main.$s$fEq(,)_$s$fEq[]
+"SPEC/Main $fEq[]_$c/= @ (Phrase, [Phrase])" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                        (Chatterbot.Phrase,
+                                                                         [Chatterbot.Phrase]))
+  GHC.Classes.$fEq[]_$c/= @ (Chatterbot.Phrase, [Chatterbot.Phrase])
+                          $dEq
+  = Main.$s$fEq[]_$s$fEq[]_$c/=
+"SPEC/Main $fEq[]_$c/= @ Integer" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                             GHC.Integer.Type.Integer)
+  GHC.Classes.$fEq[]_$c/= @ GHC.Integer.Type.Integer $dEq
+  = Main.$s$fEqMaybe_$s$fEq[]_$c/=
+"SPEC/Main $fEq[]_$c/= @ [String]" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                              [GHC.Base.String])
+  GHC.Classes.$fEq[]_$c/= @ [GHC.Base.String] $dEq
+  = Main.$s$fEq(,)_$s$fEq[]_$c/=
+"SPEC/Main $fShow(,)_$cshowList @ [String] @ [Phrase]" [ALWAYS] forall ($dShow1 :: GHC.Show.Show
+                                                                                     [Chatterbot.Phrase])
+                                                                       ($dShow :: GHC.Show.Show
+                                                                                    [GHC.Base.String])
+  GHC.Show.$fShow(,)_$cshowList @ [GHC.Base.String]
+                                @ [Chatterbot.Phrase]
+                                $dShow
+                                $dShow1
+  = Main.$s$fShow(,)_$s$fShow(,)_$cshowList
+"SPEC/Main $fShowMaybe @ [Char]" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                              [GHC.Types.Char])
+  GHC.Show.$fShowMaybe @ [GHC.Types.Char] $dShow = Main.$s$fShowMaybe
+"SPEC/Main $fShowMaybe @ [Integer]" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                 [GHC.Integer.Type.Integer])
+  GHC.Show.$fShowMaybe @ [GHC.Integer.Type.Integer] $dShow
+  = Main.$s$fShowMaybe3
+"SPEC/Main $fShow[] @ (Phrase, [Phrase])" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                       (Chatterbot.Phrase,
+                                                                        [Chatterbot.Phrase]))
+  GHC.Show.$fShow[] @ (Chatterbot.Phrase, [Chatterbot.Phrase]) $dShow
+  = Main.$s$fShow[]
+"SPEC/Main $fShow[] @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                            GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[] @ GHC.Integer.Type.Integer $dShow
+  = Main.$s$fShowMaybe_$s$fShow[]
+"SPEC/Main $fShow[] @ [String]" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                             [GHC.Base.String])
+  GHC.Show.$fShow[] @ [GHC.Base.String] $dShow
+  = Main.$s$fShow(,)_$s$fShow[]
+"SPEC/Main $fShow[]_$cshow @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                   GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[]_$cshow @ GHC.Integer.Type.Integer $dShow
+  = Main.$s$fShowMaybe_$s$fShow[]_$cshow
+"SPEC/Main $fShow[]_$cshowList @ (Phrase, [Phrase])" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                  (Chatterbot.Phrase,
+                                                                                   [Chatterbot.Phrase]))
+  GHC.Show.$fShow[]_$cshowList @ (Chatterbot.Phrase,
+                                  [Chatterbot.Phrase])
+                               $dShow
+  = Main.$s$fShow[]_$s$fShow[]_$cshowList
+"SPEC/Main $fShow[]_$cshowList @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                       GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[]_$cshowList @ GHC.Integer.Type.Integer $dShow
+  = Main.$s$fShowMaybe_$s$fShow[]_$cshowList
+"SPEC/Main $fShow[]_$cshowsPrec @ (Phrase, [Phrase])" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                   (Chatterbot.Phrase,
+                                                                                    [Chatterbot.Phrase]))
+  GHC.Show.$fShow[]_$cshowsPrec @ (Chatterbot.Phrase,
+                                   [Chatterbot.Phrase])
+                                $dShow
+  = Main.$s$fShow[]_$s$fShow[]_$cshowsPrec
+"SPEC/Main $fShow[]_$cshowsPrec @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                        GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[]_$cshowsPrec @ GHC.Integer.Type.Integer $dShow
+  = Main.$s$fShowMaybe_$s$fShow[]_$cshowsPrec
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -3,6 +3,8 @@ import Utilities
 import System.Random
 import Data.Char
 
+import Data.Maybe
+
 chatterbot :: String -> [(String, [String])] -> IO ()
 chatterbot botName botRules = do
     putStrLn ("\n\nHi! I am " ++ botName ++ ". How are you?")
@@ -27,15 +29,17 @@ type BotBrain = [(Phrase, [Phrase])]
 
 stateOfMind :: BotBrain -> IO (Phrase -> Phrase)
 {- TO BE WRITTEN -}
-stateOfMind _ = return id
+stateOfMind brain = do
+  r <- randomIO :: IO Float
+  return (rulesApply (map (map2 (id, pick r)) brain))
 
 rulesApply :: [PhrasePair] -> Phrase -> Phrase
 {- TO BE WRITTEN -}
-rulesApply _ = id
+rulesApply = (fromMaybe [] .) . transformationsApply "*" reflect
 
 reflect :: Phrase -> Phrase
 {- TO BE WRITTEN -}
-reflect = id
+reflect = map (try (`lookup` reflections))
 
 reflections =
   [ ("am",     "are"),
@@ -66,11 +70,11 @@ present :: Phrase -> String
 present = unwords
 
 prepare :: String -> Phrase
-prepare = reduce . words . map toLower . filter (not . flip elem ".,:;*!#%&|") 
+prepare = reduce . words . map toLower . filter (not . flip elem ".,:;*!#%&|")
 
 rulesCompile :: [(String, [String])] -> BotBrain
 {- TO BE WRITTEN -}
-rulesCompile _ = []
+rulesCompile = (map . map2) (words . map toLower, map (words . map toLower))
 
 
 --------------------------------------
@@ -96,7 +100,7 @@ reduce = reductionsApply reductions
 
 reductionsApply :: [PhrasePair] -> Phrase -> Phrase
 {- TO BE WRITTEN -}
-reductionsApply _ = id
+reductionsApply = fix . try . transformationsApply "*" id
 
 
 -------------------------------------------------------
@@ -105,37 +109,46 @@ reductionsApply _ = id
 
 -- Replaces a wildcard in a list with the list given as the third argument
 substitute :: Eq a => a -> [a] -> [a] -> [a]
-substitute _ _ _ = []
+substitute _ [] _ = []
+substitute wildcard (t:ts) s
+  | wildcard == t    = s ++ substitute wildcard ts s
+  | otherwise = t: substitute wildcard ts s
 {- TO BE WRITTEN -}
 
 
 -- Tries to match two lists. If they match, the result consists of the sublist
 -- bound to the wildcard in the pattern list.
 match :: Eq a => a -> [a] -> [a] -> Maybe [a]
-match _ _ _ = Nothing
+match _ [] [] = Just []
+match _ _ [] = Nothing
+match _ [] _ = Nothing
+match wildcard (p:ps) (s:ss)
+  | p /= wildcard && p == s = match wildcard ps ss
+  | p == wildcard           = orElse (singleWildcardMatch (p:ps) (s:ss))
+      (longerWildcardMatch (p:ps) (s:ss))
+  | otherwise = Nothing
 {- TO BE WRITTEN -}
 
 
 -- Helper function to match
 singleWildcardMatch, longerWildcardMatch :: Eq a => [a] -> [a] -> Maybe [a]
-singleWildcardMatch (wc:ps) (x:xs) = Nothing
+singleWildcardMatch (wc:ps) (x:xs) = mmap (const [x]) (match wc ps xs)
 {- TO BE WRITTEN -}
-longerWildcardMatch (wc:ps) (x:xs) = Nothing
+longerWildcardMatch (wc:ps) (x:xs) = mmap (x:) (match wc (wc:ps) xs)
 {- TO BE WRITTEN -}
 
 
 
 -- Test cases --------------------
 
-testPattern =  "a=*;"
-testSubstitutions = "32"
-testString = "a=32;"
+--testPattern =  "a=*;"
+--testSubstitutions = "32"
+--testString = "a=32;"
 
-substituteTest = substitute '*' testPattern testSubstitutions
-substituteCheck = substituteTest == testString
+--substituteCheck = substituteTest == testString
 
-matchTest = match '*' testPattern testString
-matchCheck = matchTest == Just testSubstitutions
+--matchTest = match '*' testPattern testString
+--matchCheck = matchTest == Just testSubstitutions
 
 
 
@@ -145,13 +158,11 @@ matchCheck = matchTest == Just testSubstitutions
 
 -- Applying a single pattern
 transformationApply :: Eq a => a -> ([a] -> [a]) -> [a] -> ([a], [a]) -> Maybe [a]
-transformationApply _ _ _ _ = Nothing
+transformationApply wc func input (a, b) = mmap (substitute wc b . func) (match wc a input)
 {- TO BE WRITTEN -}
 
 
 -- Applying a list of patterns until one succeeds
 transformationsApply :: Eq a => a -> ([a] -> [a]) -> [([a], [a])] -> [a] -> Maybe [a]
-transformationsApply _ _ _ _ = Nothing
+transformationsApply wc func xs input = foldl1 orElse (map (transformationApply wc func input) xs)
 {- TO BE WRITTEN -}
-
-

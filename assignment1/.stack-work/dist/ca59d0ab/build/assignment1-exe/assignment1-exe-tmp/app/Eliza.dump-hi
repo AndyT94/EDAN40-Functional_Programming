@@ -1,0 +1,2022 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-24 15:46:35.0584243 UTC
+
+interface main@main:Main 8002
+  interface hash: 16ffff2b1818b3864e672158ed3bdda7
+  ABI hash: 80d42f8c69eaacee10b384e1599bfb49
+  export-list hash: 83094114065929e28315369bc7c20575
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a48dbc869c64be86cddd82d64b9e28da
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.eliza
+  Main.main
+module dependencies:
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      array-0.5.1.1@array-0.5.1.1
+                      assignment1-0.1.0.0@assignment1-0.1.0.0-2RzjC4JpVbO6M4vQTQJu9q
+                      base-4.9.1.0* deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      time-1.6.0.1@time-1.6.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  assignment1-0.1.0.0@assignment1-0.1.0.0-2RzjC4JpVbO6M4vQTQJu9q:Chatterbot 276f9772290675b791290bd44d659f14
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+558b163ddd39f1c4a9a7bfcc43bcf253
+  eliza :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza376
+                   Main.eliza1) -}
+5bc353565638b8de906575465370861f
+  eliza1 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza368
+                   Main.eliza2) -}
+50f72394e37a6309e2a5e732b41ad9ca
+  eliza10 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza294
+                   Main.eliza11) -}
+ceb6202438f4227741e8c958b78aa557
+  eliza100 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How did your father make you feel?"#) -}
+fe16292abc8ceaaf1ced40c34374494c
+  eliza101 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Tell me more about your father."#) -}
+1f811cdb929d491ed660ca2dc664a25e
+  eliza102 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "* father *"#) -}
+713d4e228e727a18af45d74564bfbbf9
+  eliza103 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza114, Main.eliza104)) -}
+8669d13470bd7ca16f7ce566d5de9e95
+  eliza104 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza113
+                   Main.eliza105) -}
+0bf11cc9ac7a32511a1fd037fbb11125
+  eliza105 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza112
+                   Main.eliza106) -}
+7e0fa2ab677ee4035bd59d32e17bd7fa
+  eliza106 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza111
+                   Main.eliza107) -}
+24ed6ab7582de1f53fdcb136e7021225
+  eliza107 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza110
+                   Main.eliza108) -}
+1b26a757fa22f2d8900542d5f321966a
+  eliza108 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza109
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+7a391b9172cb3a8669902e4a551ccb32
+  eliza109 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Good family relations are important."#) -}
+ac70b03f413778bab8e9ebe0c7b1e532
+  eliza11 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza284
+                   Main.eliza12) -}
+d21ad4cd8a5f30ea0e53d9ad827e46fc
+  eliza110 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How does this relate to your feelings today?"#) -}
+ae6cd13b40141f8ec4c41b810f699290
+  eliza111 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How do you feel about your mother?"#) -}
+7740d3ba0b28a30be1d59c830d69f6c7
+  eliza112 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "What was your relationship with your mother like?"#) -}
+86fa3a3a3fe4fb0d2817620339af7629
+  eliza113 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Tell me more about your mother."#) -}
+d958841dd213bbd5b97152f49fb1a129
+  eliza114 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "* mother *"#) -}
+7d2d715b1ef2793c55dbec18fb4ae808
+  eliza115 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza124, Main.eliza116)) -}
+dc8bd6c3b9ba605c70b8fdf5ea62dbf3
+  eliza116 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza123
+                   Main.eliza117) -}
+277733bdf3159763f7e0283f8bd62871
+  eliza117 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza122
+                   Main.eliza118) -}
+f490874cd3b1b7fe93a2e96243a3a4f4
+  eliza118 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza121
+                   Main.eliza119) -}
+dd2ef1d2f168faf73f06fb38eb961b7c
+  eliza119 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza120
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+9fba4c13d09aa6c05a4435bf0bda89ca
+  eliza12 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza278
+                   Main.eliza13) -}
+52e5eef7c3c49663a99e727f4a4b9bd2
+  eliza120 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "If you got * , then what would you do?"#) -}
+3533e47151300d70d201f2b77028a41f
+  eliza121 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "What would you do if you got * ?"#) -}
+7c055d5a17b6bd1252e2e0d239b69f3a
+  eliza122 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you want * ?"#) -}
+d78cef1b502753c615218ac949e9cba7
+  eliza123 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "What would it mean to you if you got * ?"#) -}
+61bc9cfdc16a73bd67baddcb418862ef
+  eliza124 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I want *"#) -}
+53bf02e9a66a59dd31263998438ac780
+  eliza125 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza130, Main.eliza126)) -}
+c2d5c9ffa0c6d11faf9bb797f2becef2
+  eliza126 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza129
+                   Main.eliza127) -}
+09e7be7c11e299c4a5a615d6060bfbf4
+  eliza127 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza128
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+cb4b94c6fefa1cabd6df8d668c84eca3
+  eliza128 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you think * ?"#) -}
+a9d42983dac902111338181dc9cf5e5e
+  eliza129 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why don't you tell me the reason why * ?"#) -}
+a09d5d5b026db4e636afa72fc9ae9b39
+  eliza13 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza270
+                   Main.eliza14) -}
+552f86fe260c8b3491314304cce571b8
+  eliza130 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Why *"#) -}
+e445d7356df74acbdc8c3b2ca36f0fe0
+  eliza131 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza138, Main.eliza132)) -}
+df747b64e2a03ca6715b684f72461c5f
+  eliza132 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza137
+                   Main.eliza133) -}
+b2867118af2d862b0fc25ef07f51a4c9
+  eliza133 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza136
+                   Main.eliza134) -}
+e11cc87a68abd8e77d12a9c023ef428a
+  eliza134 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza135
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+f34f34ec3719281cc226cc88b16830dc
+  eliza135 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you care whether I * ?"#) -}
+8669ca4cc43ddaeaa87a2dac6bbbe85e
+  eliza136 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you say that about me?"#) -}
+56bb48c3e3ae1d85444cf54ba2303478
+  eliza137 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "We should be discussing you, not me."#) -}
+4897837fe401ad54aabaa7022980851b
+  eliza138 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "You *"#) -}
+d71a77898dd3966247b9eba94dc61db8
+  eliza139 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza146, Main.eliza140)) -}
+d852e1db04391a33b1440571f746a27f
+  eliza14 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza262
+                   Main.eliza15) -}
+276e768400057ab0bcf93f968d3ae772
+  eliza140 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza145
+                   Main.eliza141) -}
+8db32b458e0a7133ea0a8e8607491170
+  eliza141 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza144
+                   Main.eliza142) -}
+b672b5dc4df12fabb8939059c8f9981c
+  eliza142 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza143
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+40c8838493afed8416201df34ef04bb3
+  eliza143 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "When your * , how do you feel?"#) -}
+3553f6f93d22c600195d39b57d007b56
+  eliza144 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you say that your * ?"#) -}
+ebbeca61d3093b8baab2719f0aa9c02e
+  eliza145 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I see, your * ."#) -}
+3c68a493b1211f76c8800016600388f7
+  eliza146 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "My *"#) -}
+ae8f7aecb5189e5c2f8dca3e25c4a966
+  eliza147 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza154, Main.eliza148)) -}
+58364e8020d73a995d97ceb2e81f8691
+  eliza148 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza153
+                   Main.eliza149) -}
+09457cbb6aa9846dd06a81347061e951
+  eliza149 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza152
+                   Main.eliza150) -}
+aa2efe84483b579f0f914a9ebbab9d54
+  eliza15 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza254
+                   Main.eliza16) -}
+c9014d0717f00788dfaf81979ad18d54
+  eliza150 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza151
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+050dd73c893da6ff8941d5aa258a64bf
+  eliza151 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Would you like there to be * ?"#) -}
+f08cc0ce6635ca76ffa322bef44a8454
+  eliza152 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "It's likely that there is * ."#) -}
+529d97e867ef683f2abaa13055189a87
+  eliza153 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Do you think there is * ?"#) -}
+ddc197d8e070a15d9a366f951a1722e3
+  eliza154 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Is there *"#) -}
+ae6ed6d53f214fbe74f9db533faed3ec
+  eliza155 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza162, Main.eliza156)) -}
+ce03e5b4567c49d598934ee1a2d62f44
+  eliza156 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza161
+                   Main.eliza157) -}
+498b0dec2b1cea60d20393b1847f1057
+  eliza157 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza160
+                   Main.eliza158) -}
+29a124d866a431a4882fc7fb62ccd298
+  eliza158 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza159
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+93f54a074d488ef7880c2a11aca3c67d
+  eliza159 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Who else knows that you would * ?"#) -}
+e93a932d042d483913cd1ca732403e37
+  eliza16 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza248
+                   Main.eliza17) -}
+389ce3d748abbeac533633b4568a9f8b
+  eliza160 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Why would you * ?"#) -}
+7557d390fe2dec068877a38a1540086a
+  eliza161 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Could you explain why you would * ?"#) -}
+8bbb648b39cd4b40e1baf197dfe20b21
+  eliza162 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I would *"#) -}
+04015ef5fae22ae1f32018dd7c51b951
+  eliza163 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza170, Main.eliza164)) -}
+445576c63a794b05a4b30337f5562933
+  eliza164 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza169
+                   Main.eliza165) -}
+51b255afd3667d0e2be2ae809e023989
+  eliza165 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza168
+                   Main.eliza166) -}
+7c9339dc095c7408dad570df88e17769
+  eliza166 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza167
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+8c33551318e746bab5afc468bc22acc1
+  eliza167 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Now that you have * , what will you do next?"#) -}
+4cf9d959cc71a8c5c7992f3645fe0a77
+  eliza168 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Have you really * ?"#) -}
+b1554d7c483329fa4da472b5f6308d13
+  eliza169 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you tell me that you've * ?"#) -}
+f5363bfc7134f6402fe97af4ab5f428f
+  eliza17 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza238
+                   Main.eliza18) -}
+7de28788f6aa5fdbef85d1b269de2b2a
+  eliza170 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I have *"#) -}
+000dd1add93659e6aacc0229b19fea42
+  eliza171 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza180, Main.eliza172)) -}
+bda30c763c07055ab6a1ae19df17b47e
+  eliza172 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza179
+                   Main.eliza173) -}
+007f45046d0bdefcd318c9e4074b19f3
+  eliza173 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza178
+                   Main.eliza174) -}
+b5383f3e6ad49c6f7edbd91d9add9fdf
+  eliza174 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza177
+                   Main.eliza175) -}
+04224d9a465f9305d667ad57842f53c0
+  eliza175 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza176
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+03a74089bc53b5477f1725c73c125415
+  eliza176 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "When you feel * , what do you do?"#) -}
+7038f3bfa64b12bd8405a3e18701fbd9
+  eliza177 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "When do you usually feel * ?"#) -}
+1a9d2b33cae89b491c1767fe2d863bd6
+  eliza178 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Do you often feel * ?"#) -}
+4e207ed3da2dcdce5bf5c66a789aac01
+  eliza179 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Good, tell me more about these feelings."#) -}
+cf6b3441882326f34478e37f46904375
+  eliza18 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza228
+                   Main.eliza19) -}
+bd3488c835d50c694a35696f22d5ae0a
+  eliza180 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I feel *"#) -}
+23c503217580ed74caf0d9c8201099c8
+  eliza181 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza188, Main.eliza182)) -}
+9427a1763ce40993b2e4e35f9e023b29
+  eliza182 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza187
+                   Main.eliza183) -}
+0a323b357682174649cc7b4e6809a494
+  eliza183 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza186
+                   Main.eliza184) -}
+aff1784d8fe81b78f5c4d3d1b477bd79
+  eliza184 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza185
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+7e4adf9fda98d02fc7c81705e8d8aa22
+  eliza185 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Do you want to * ?"#) -}
+c9ce29ce9e82056b17e438ee5f40156f
+  eliza186 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Why don't you * ?"#) -}
+bd96a7bab5394e44f7a9b81dce4c9225
+  eliza187 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Don't you really * ?"#) -}
+b273c5a56f5c752489caab9137e6c567
+  eliza188 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I don't *"#) -}
+3265f7a73b9675d23176500b99105cc5
+  eliza189 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza196, Main.eliza190)) -}
+50a1c4ebc244b00eadf685a1e76e7205
+  eliza19 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza222
+                   Main.eliza20) -}
+eeb0c9e41530522933645f8388924966
+  eliza190 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza195
+                   Main.eliza191) -}
+c57edeea64f05683e299860c0c3d2434
+  eliza191 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza194
+                   Main.eliza192) -}
+4ce5e6633c23a8bd9cb98bef8cf93b85
+  eliza192 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza193
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+da650bf92be8c2429c73735ec90b53a3
+  eliza193 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Are we talking about you, or me?"#) -}
+9043f0a46bb48efda54d367fec110e77
+  eliza194 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you think I am * ?"#) -}
+e94d1ece33032d0dd9553a981291eff2
+  eliza195 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you say I am * ?"#) -}
+f522321a57f9a0c2615702d1e4bdff2c
+  eliza196 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "You're *"#) -}
+06ed9e96d9ae4023f6679e5b8bd6ff57
+  eliza197 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza205, Main.eliza198)) -}
+b379074e144d5731e376b88fcf3a0c0e
+  eliza198 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza194
+                   Main.eliza199) -}
+cb00e99a2a4a1276765148ec7081f24b
+  eliza199 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza204
+                   Main.eliza200) -}
+18ae0662cd6bf3adb07405da1d27756c
+  eliza2 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza360
+                   Main.eliza3) -}
+29076ddb0c7a01f1d624e5ca8a27d632
+  eliza20 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza214
+                   Main.eliza21) -}
+8ca9eebcd657be9003619c84ae9fce28
+  eliza200 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza203
+                   Main.eliza201) -}
+607d26ae28df8ae96736469ffd5f11ec
+  eliza201 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza202
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+b083f5495486e4ce6f4b6ad7c3a1f153
+  eliza202 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Perhaps you're really talking about yourself?"#) -}
+551c02abc5ffa79377dcabc7562c27a6
+  eliza203 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Perhaps you would like me to be * ."#) -}
+e0a121c9966d2e01d776c420515de8ab
+  eliza204 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Does it please you to think that I'm * ?"#) -}
+3851cdae8b3cb72356ae8822505f0f34
+  eliza205 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "You are *"#) -}
+f5d01a54c93044b9cf67f8da274c1b3c
+  eliza206 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza213, Main.eliza207)) -}
+25a4081903072fedda2003761b674189
+  eliza207 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza212
+                   Main.eliza208) -}
+e6db34e6d6757b34fdf81524cc1086fb
+  eliza208 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza211
+                   Main.eliza209) -}
+220bd7c990d48e0cb1cc3e0393c15405
+  eliza209 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza210
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+2b08a4e7c4890267579c6badbb223c8b
+  eliza21 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza206
+                   Main.eliza22) -}
+38670d2dcefa87d74045703c32faaea4
+  eliza210 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "If you could * , would you?"#) -}
+2c9a7ae6143f8fe3f7ba51518865232d
+  eliza211 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Do you want to be able to * ?"#) -}
+12e47e08ed0acfdd46ced9927f0540fa
+  eliza212 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Perhaps you don't want to * ."#) -}
+ed5a113ae074348bc05a593ae1a820d1
+  eliza213 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Can I *"#) -}
+4c731fc28fda22de28e041835105cdfc
+  eliza214 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza221, Main.eliza215)) -}
+db96a0c94d8bab35fd4fccad1ad19352
+  eliza215 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza220
+                   Main.eliza216) -}
+70e7879ddb9504cc7dbb2d1379b38757
+  eliza216 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza219
+                   Main.eliza217) -}
+c6e4823bcc95d5249db5e65a621ea7ec
+  eliza217 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza218
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+9c325018da83b631ed5e82eb32b937a7
+  eliza218 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you ask if I can * ?"#) -}
+f2508f64d17e4b665b87e5b88795dd0b
+  eliza219 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "If I could * , then what?"#) -}
+7e367f96d542f7befd8a93f808c71696
+  eliza22 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza197
+                   Main.eliza23) -}
+613dafd60fe712e7b336dc93d76a62e4
+  eliza220 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "What makes you think I can't * ?"#) -}
+88c1dc09e0caa22851b1128a353177ff
+  eliza221 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Can you *"#) -}
+3efc94385b911e569e80cc9c8c1bb2cb
+  eliza222 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza227, Main.eliza223)) -}
+baae3346e657aea66dd23ee712284e0a
+  eliza223 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza226
+                   Main.eliza224) -}
+7ebc533397a9e14b618a522ebb540b45
+  eliza224 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza225
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+3d091f414943966f6107f171a9d0887c
+  eliza225 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "If I told you that it probably isn't * , what would you feel?"#) -}
+5a24e25ca21877dd66fd30226126d670
+  eliza226 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "You seem very certain."#) -}
+805da567a2cebb095f781554da25491e
+  eliza227 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "It is *"#) -}
+921149c55448f611583ffbbdc1f9407c
+  eliza228 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza237, Main.eliza229)) -}
+bafebf061b1d10d537c896ecfd3e29e2
+  eliza229 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza236
+                   Main.eliza230) -}
+d0c00be442de7ccd325f7fd10c1e42fe
+  eliza23 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza189
+                   Main.eliza24) -}
+ee8acbdc3de0eaee12038069075b32c5
+  eliza230 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza235
+                   Main.eliza231) -}
+7beeb192d7d65f8fc993661715e59636
+  eliza231 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza234
+                   Main.eliza232) -}
+37058e5ccb163d6a3f3d9c758dfe8515
+  eliza232 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza233
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+484a1bb8ef8d94e0aec9f2ea6aa5e182
+  eliza233 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "It could well be that * ."#) -}
+2661b6438d8df80022ed0626e0c3cf45
+  eliza234 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "If it were * , what would you do?"#) -}
+bb4f958cba0b3a5a9721d5c73f5c2ef9
+  eliza235 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Perhaps it's * -- what do you think?"#) -}
+9567b72d6ab16d6f08bd94dd9354c68b
+  eliza236 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Do you think it is * ?"#) -}
+597219897817ad6dbe3f793421a186b2
+  eliza237 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Is it *"#) -}
+73fd1a049c205c0837b8a0838b55ff6c
+  eliza238 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza247, Main.eliza239)) -}
+b21c51623fef33cfb6e086a1d007378a
+  eliza239 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza246
+                   Main.eliza240) -}
+cdba463983dddf5c0dad25e9286925e9
+  eliza24 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza181
+                   Main.eliza25) -}
+b56f74c9e31a096bd9b03dfa32ac2abd
+  eliza240 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza245
+                   Main.eliza241) -}
+2fb18e3e314266863f3d5618e3f4b5e7
+  eliza241 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza244
+                   Main.eliza242) -}
+b78057ea42881c5c76176aaafdae85f1
+  eliza242 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza243
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+d091312e07f9d2ebf2de43dabad6b435
+  eliza243 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Do you feel threatened by computers?"#) -}
+627025b0d5d864c2e0423ff223b4819e
+  eliza244 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How do computers make you feel?"#) -}
+77b87f149732a38f84b5828dece35f4e
+  eliza245 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Does it seem strange to talk to a computer?"#) -}
+7c0cd9039ac9cb584aa5b5313df23630
+  eliza246 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Are you really talking about me?"#) -}
+a144366a5366e31e00e311f22a0b0e43
+  eliza247 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "* computer *"#) -}
+669856ad53945cbe7cd621e473fe2cae
+  eliza248 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza253, Main.eliza249)) -}
+a648968bccf917cf4a18f284ebf5a6f1
+  eliza249 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza252
+                   Main.eliza250) -}
+1c19b5999459314990a94f7e422a98b3
+  eliza25 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza171
+                   Main.eliza26) -}
+84a3a88a77d055818725a8c8c87ba7e4
+  eliza250 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza251
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+cbe904082a17bf4720e519a563a727f4
+  eliza251 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "OK, but can you elaborate a bit?"#) -}
+ae554778f5d5d89985580450f52bb3b6
+  eliza252 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "You seem quite sure."#) -}
+c302315b72da9fca40e46c9e6249ec47
+  eliza253 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Yes"#) -}
+082eeb9307ed19b3fa05dd3530e39e87
+  eliza254 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza261, Main.eliza255)) -}
+fc7359f0b61f93de8e907b27d574cc63
+  eliza255 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza260
+                   Main.eliza256) -}
+d35c7cbdf5c697a9d458387a9e621d7c
+  eliza256 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza259
+                   Main.eliza257) -}
+76dc36fa7c1cb18d77383b51958a0f85
+  eliza257 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza258
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+6aa32e4308f7e4b74b84b8a4d532b464
+  eliza258 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why don't you tell me about a childhood friend?"#) -}
+3f124dcea4027432e18ecd48e85d8885
+  eliza259 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "When you think of a friend, what comes to mind?"#) -}
+4d0fbb0c74f5efd7b524bc230f7699d1
+  eliza26 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza163
+                   Main.eliza27) -}
+ee6b4c19d95cea99fb5a2d187a15d7f0
+  eliza260 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Tell me more about your friends."#) -}
+46183e12add2f572cc04726a6f1dd1e0
+  eliza261 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "* friend *"#) -}
+302dab20031d98fe967604fbdbd4653e
+  eliza262 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza269, Main.eliza263)) -}
+aebc4cf2f6650d371d3cd333c555f235
+  eliza263 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza268
+                   Main.eliza264) -}
+acf5cae5f7a470937742dd50b4e1f642
+  eliza264 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza267
+                   Main.eliza265) -}
+7c4998f0306696c462ab9e6d7407a518
+  eliza265 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza266
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+97919c1fccb9d2e123e0edb01a83784e
+  eliza266 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "But you're not sure * ?"#) -}
+29e568dcced8c66987ddd0318db13538
+  eliza267 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Do you really think so?"#) -}
+6fe86475fd9d2120d0bf000aa031700b
+  eliza268 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Do you doubt * ?"#) -}
+9409c2fb462411482d744840435b2920
+  eliza269 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I think *"#) -}
+d518d22d6dcab9a80cfa1bedf6d7ba86
+  eliza27 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza155
+                   Main.eliza28) -}
+2b8d34f4a723ce0ce38c5ff4c531d762
+  eliza270 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza277, Main.eliza271)) -}
+ff9bcbf60322716547b52bdb3397396e
+  eliza271 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza276
+                   Main.eliza272) -}
+17c87ef28330ac51913e77b9b13c2d22
+  eliza272 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza275
+                   Main.eliza273) -}
+a2e86714756d74e839fa37ed47a45fd3
+  eliza273 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza274
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+eb4cdaf8b4ef168c062e929af0461ddd
+  eliza274 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Hello, how are you feeling today?"#) -}
+eb446073ccae3ae674498ac8add7aac7
+  eliza275 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Hi there... how are you today?"#) -}
+57adb22e2a3e7d64b07778899e35dbb3
+  eliza276 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Hello... I'm glad you could drop by today."#) -}
+8788394976c46c91da969049175245f8
+  eliza277 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Hello *"#) -}
+71920c62264f510c5c484a339f56aad7
+  eliza278 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza283, Main.eliza279)) -}
+4f1763162c4e240f413693a1b056faf5
+  eliza279 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza282
+                   Main.eliza280) -}
+08c9d9cb8536a20a0da1d748c577ef23
+  eliza28 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza147
+                   Main.eliza29) -}
+f23f12dcfe83aa6589d319b8dfe0bb1a
+  eliza280 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza281
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+bf67097fccf139cb47d950575821ee6f
+  eliza281 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "What feelings do you have when you apologize?"#) -}
+b3e935ae04824202a06087c1767429fc
+  eliza282 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "There are many times when no apology is needed."#) -}
+87c472e99405d0b000bdb6e574a6e28d
+  eliza283 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "* sorry *"#) -}
+30a7062e2361fb996b079fa7b123a7a1
+  eliza284 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza293, Main.eliza285)) -}
+d22fa28d45bb042b7aed444ec0f3d541
+  eliza285 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza292
+                   Main.eliza286) -}
+fe4205191a82ab1cfbd1f2b2e939cb30
+  eliza286 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza291
+                   Main.eliza287) -}
+b69d44788f3fb537c65c0a5ecfe9f0ce
+  eliza287 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza290
+                   Main.eliza288) -}
+a74d8bfbdd7738406db050b7d21a2910
+  eliza288 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza289
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+97ec6983b15aa4c4ad99aa3a02b97f25
+  eliza289 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "If * , what else must be true?"#) -}
+76fade00e063b68bb7198d29b413f2cb
+  eliza29 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza139
+                   Main.eliza30) -}
+2dfbb86fba2cb65101e2b0fc04371585
+  eliza290 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Does that reason apply to anything else?"#) -}
+86f074ddede8ae8af3a13d9d2915b1dd
+  eliza291 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "What other reasons come to mind?"#) -}
+2b73a978110d57431964206544ed05fb
+  eliza292 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Is that the real reason?"#) -}
+93d444352955b9c8e73f024ab73d8d27
+  eliza293 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Because *"#) -}
+46ad3242b0f84332f67357424ae54ee9
+  eliza294 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza301, Main.eliza295)) -}
+45d9dda1e06292f79e2f46471c25b2d5
+  eliza295 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza300
+                   Main.eliza296) -}
+e6e070885a6b6da81e3c33f76ce031c8
+  eliza296 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza299
+                   Main.eliza297) -}
+a0115ecc78e6b40b14859236137e5b68
+  eliza297 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza298
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+1d8ce04793babb12f14031eeeecab375
+  eliza298 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "What is it you're really asking?"#) -}
+6b72cdfe941465657c18f5bff5c0bb5c
+  eliza299 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Perhaps you can answer your own question."#) -}
+3eb1a13b0b04bb1d96aa69600796d997
+  eliza3 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza350
+                   Main.eliza4) -}
+34d7eed5b570e4d085402321a114dec9
+  eliza30 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza131
+                   Main.eliza31) -}
+e81e5265751f61e35347c87b4bb93c7f
+  eliza300 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How do you suppose?"#) -}
+2d5a7249fd78a8197542c169e0e3cdab
+  eliza301 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "How *"#) -}
+44b938d856f341f9fd5f0178bb6c5380
+  eliza302 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza309, Main.eliza303)) -}
+53f7bad8050eeedd4e7fe81553ec4a2a
+  eliza303 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza308
+                   Main.eliza304) -}
+f0bbf7316d93c00c6e6642f2487c78a2
+  eliza304 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza307
+                   Main.eliza305) -}
+a7eca4f236ce8eaf530128bd6245c333
+  eliza305 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza306
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+905afd231a9c02b88cdfa40a8fa90ce8
+  eliza306 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "What do you think?"#) -}
+946f158301da0464863a91a95474b60c
+  eliza307 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How would an answer to that help you?"#) -}
+92135217ee1e4b4d382178cf86cbe53f
+  eliza308 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Why do you ask?"#) -}
+7e6af8bdf794b39bb638cd37df7cdac1
+  eliza309 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "What *"#) -}
+72f4da2efc758ff84d178ba1b6969234
+  eliza31 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza125
+                   Main.eliza32) -}
+7fc43cb34f7a33fefa7de808676c82a1
+  eliza310 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza313, Main.eliza311)) -}
+3a270df8a80d32d7c3ad089e1fe083f0
+  eliza311 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza312
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+031384e2eca43e19bbbda1c9c4cfbca6
+  eliza312 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Oh, I thought you knew that. It is a functional programming language featuring strong typing and lazy evaluation."#) -}
+476ed3cf37de9cf001053b769dfb57d8
+  eliza313 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "What is Haskell"#) -}
+831708a7bc4767bb7792f1bf2cc10909
+  eliza314 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza323, Main.eliza315)) -}
+a845d42f3280dcbda8fb0af4ea0a4493
+  eliza315 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza322
+                   Main.eliza316) -}
+d00012728cc0cb6100734a9698b74952
+  eliza316 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza321
+                   Main.eliza317) -}
+9eebd359874558b88429b6a321800be2
+  eliza317 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza320
+                   Main.eliza318) -}
+756b1e635f8451f98632f59f4c995a63
+  eliza318 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza319
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+e9d1f304cd6bd82bb9d423fa4e5fc698
+  eliza319 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "I may be * -- what do you think?"#) -}
+d71ba19a1bba394e80626fc4d5ae2dff
+  eliza32 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza115
+                   Main.eliza33) -}
+562b9b64a274c49c231b272552c7001f
+  eliza320 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Perhaps you believe I am * ."#) -}
+779dc436b005bb8e8482703cfb51f573
+  eliza321 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Would you prefer it if I were not * ?"#) -}
+67a67dff28493b47c4bff97a47cb5723
+  eliza322 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why does it matter whether I am * ?"#) -}
+05b91953164d13ccde78edac7f2b2f8d
+  eliza323 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Are you *"#) -}
+17067f381123c53c91699601343303f8
+  eliza324 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza333, Main.eliza325)) -}
+de2587828c573df03050640cf64ef6b9
+  eliza325 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza332
+                   Main.eliza326) -}
+b4ad27d0bae65ddad033b3c2b0fcd766
+  eliza326 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza331
+                   Main.eliza327) -}
+ab355c8167191a580ce0d729cb90c616
+  eliza327 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza330
+                   Main.eliza328) -}
+7014295e099253016382d52d8f8657e4
+  eliza328 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza329
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+fbc8d1938a8c88a2e4b7e304e734aa2e
+  eliza329 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you think you're * ?"#) -}
+c6d9e4f0fc671144f858c17d41b447eb
+  eliza33 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza103
+                   Main.eliza34) -}
+8ad54ff5076c80f72a92d7c215f3768a
+  eliza330 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you tell me you're * ?"#) -}
+281f9e28ec28a06c943e7c634bfb463b
+  eliza331 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Do you enjoy being * ?"#) -}
+bf957f5db7b75d4c7a5c93f92cd82a1a
+  eliza332 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How does being * make you feel?"#) -}
+6931aa8662d9190955d5b52883b6688c
+  eliza333 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I'm *"#) -}
+06ada9eb9c53b972ecf45b0b4c970f17
+  eliza334 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza341, Main.eliza335)) -}
+9a05d31ff36a0d4be5ef736ae49d7e4f
+  eliza335 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza340
+                   Main.eliza336) -}
+6b486ac3b6b64ad6647685e919602c8f
+  eliza336 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza339
+                   Main.eliza337) -}
+413440fa1f50fb6debb64f3cd39d85d8
+  eliza337 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza338
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+3667ebeb3b774cd77c518ef555918de7
+  eliza338 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How do you feel about being * ?"#) -}
+6c95ae7356feff7cadacf909062880fa
+  eliza339 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How long have you been * ?"#) -}
+4d4b63eb0b85bc198a165cfbdeff185e
+  eliza34 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza91
+                   Main.eliza35) -}
+d630cbb5a3705910b2ab8d546f755ef4
+  eliza340 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Did you come to me because you are * ?"#) -}
+cd7b772d825536054782c3450c1c1134
+  eliza341 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I am *"#) -}
+18cae589f42e4032600cdc233b99cb09
+  eliza342 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza349, Main.eliza343)) -}
+08ab4eff40d928fc1b142c75e9095c8d
+  eliza343 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza348
+                   Main.eliza344) -}
+de741158c9db33b02a6746533afaa13d
+  eliza344 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza347
+                   Main.eliza345) -}
+2b09a7d489204f185d88e591a4475fa0
+  eliza345 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza346
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+214df924ec1f0b979ac579a85582037f
+  eliza346 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "What would it take for you to * ?"#) -}
+d3c9a502757f6f9c2daf9ddef9fa5ec7
+  eliza347 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Perhaps you could * if you tried."#) -}
+86e1418a3ae127db6c367482fd86aec6
+  eliza348 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How do you know you can't * ?"#) -}
+e61902983e9ee0322c9df04a0c6d74e2
+  eliza349 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I can't *"#) -}
+2932241033a9e6eb0fa5028ddf6652c6
+  eliza35 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza79
+                   Main.eliza36) -}
+dfd8498641906d908a4c74b9b7e65936
+  eliza350 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza359, Main.eliza351)) -}
+600d02492750b3ad70c3c06d5421e73e
+  eliza351 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza358
+                   Main.eliza352) -}
+a92e0b2dcfba9b8a65b93c6b6bd377e0
+  eliza352 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza357
+                   Main.eliza353) -}
+6ef1f3ce40c496959c436377133aa377
+  eliza353 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza356
+                   Main.eliza354) -}
+451633028188d5e24073570080010b3a
+  eliza354 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza355
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+cc13e1beec3ec2df0273fd4818b698f3
+  eliza355 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Have you really tried?"#) -}
+970fdbb260992ac1faa73c410ce96b43
+  eliza356 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "I don't know -- why can't you * ?"#) -}
+6b5f5ad2a939019bdbe82bd52ff45f9f
+  eliza357 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "If you could * , what would you do?"#) -}
+456ff0d8c6b9b5cd404524864825bd7a
+  eliza358 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Do you think you should be able to * ?"#) -}
+7943db298e0fb0ab2ab3948e314f0f55
+  eliza359 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Why can't I *"#) -}
+f745177d907750403f1875875b13d55b
+  eliza36 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza69
+                   Main.eliza37) -}
+01f020ca707b896f84a1b58184221544
+  eliza360 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza367, Main.eliza361)) -}
+8ef020c6f5c9b5ab1ca88aa366d5edb9
+  eliza361 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza366
+                   Main.eliza362) -}
+7de81258941d6d479f09ec9a2d28defe
+  eliza362 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza365
+                   Main.eliza363) -}
+7776981fac61881fd870d3c7b95ac13e
+  eliza363 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza364
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+5ddbc41e8758a6741260b8bdbbbd0f3c
+  eliza364 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Do you really want me to * ?"#) -}
+e6ae95e96ae58b5a97ae40829b6dbd65
+  eliza365 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Perhaps eventually I will * ."#) -}
+03beeb7cf5e8a68fd1c0132a22ee8262
+  eliza366 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Do you really think I don't * ?"#) -}
+1103fe8a2ef9764d489fa72ca2544326
+  eliza367 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Why don't you *"#) -}
+65f2f5f38b9043ea814a779889d39572
+  eliza368 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza375, Main.eliza369)) -}
+db45c01f5c0c878730cd876eed88bdd5
+  eliza369 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza374
+                   Main.eliza370) -}
+cb0ba8ea793d011ce37547ecbfd68763
+  eliza37 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza61
+                   Main.eliza38) -}
+23f7487c3a5a45bcd9f49e6a3a3290aa
+  eliza370 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza373
+                   Main.eliza371) -}
+938826817f8c2450fa3175b899ffb978
+  eliza371 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza372
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+67d5741d7d778056e185178cbc2b8183
+  eliza372 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Are you sure you need * ?"#) -}
+ad81f71970e6422fe7c70dfdb7836ec9
+  eliza373 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Would it really help you to get * ?"#) -}
+b3015f58f347af2033fb2ed86f56499c
+  eliza374 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you need * ?"#) -}
+03870814c32db1565e9835fa3582bb85
+  eliza375 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I need *"#) -}
+560232ae83b45c6ed7df64fa7871cffd
+  eliza376 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m,
+     Unfolding: ((GHC.Types.[] @ GHC.Types.Char, Main.eliza377)) -}
+054d99cf7adf83db119032eb7614c2e5
+  eliza377 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza378
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+0e330b2f793e00efd5ebe0aed07bf4ef
+  eliza378 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Speak up! I can't hear you."#) -}
+15c744d4a37027cb4a3ff8496057b9a5
+  eliza38 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza39
+                   (GHC.Types.[] @ ([GHC.Types.Char], [[GHC.Types.Char]]))) -}
+facbbb461a13ec1761189f86a1404d1d
+  eliza39 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza60, Main.eliza40)) -}
+6ddd845687649df5af670dc35ef1f2cc
+  eliza4 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza342
+                   Main.eliza5) -}
+935b9c72a1a7898349a5acdac47f2ca0
+  eliza40 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza59
+                   Main.eliza41) -}
+14f1e49fe50ea0c19f28965e4e2382dc
+  eliza41 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza58
+                   Main.eliza42) -}
+a96923fee805513f14bd892d01aef5d3
+  eliza42 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza57
+                   Main.eliza43) -}
+d831f94530f8bc968a99ac469180bea4
+  eliza43 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza56
+                   Main.eliza44) -}
+13ebbe30828f78b2c35c4b13bc4ab558
+  eliza44 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza55
+                   Main.eliza45) -}
+b7ca6012f318f78206313ff08a39d743
+  eliza45 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza54
+                   Main.eliza46) -}
+d57100138b7d6ebec9cc76d2f7bdee76
+  eliza46 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza53
+                   Main.eliza47) -}
+0cc9b43cfe25d65e5200b7fbafb6b7c0
+  eliza47 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza52
+                   Main.eliza48) -}
+df69f5fdd90dcb96670eb35b9dc3b40b
+  eliza48 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza51
+                   Main.eliza49) -}
+fa4f9c361741063c89cd59375c465247
+  eliza49 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza50
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+a668546360f0c312a61a3aa3113948ad
+  eliza5 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza334
+                   Main.eliza6) -}
+ae01184c92794a7919fd66e7dc5e4b11
+  eliza50 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How do you feel when you say that?"#) -}
+db6abab2034d55c40ab72bb0b608e5f6
+  eliza51 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How does that make you feel?"#) -}
+6b9fec5e7775dab883d13eda63e1c4d5
+  eliza52 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "I see.  And what does that tell you?"#) -}
+27d0e5f1407f5a332d390c1ea0fb0dbf
+  eliza53 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "* ."#) -}
+40955c0564a22a376cd461de5a81d501
+  eliza54 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Very interesting."#) -}
+1e7157d3f81eccd10918e0ff3cefe48c
+  eliza55 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "I see."#) -}
+15c34e40e4647022b6a26fa21f247b8f
+  eliza56 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you say that * ?"#) -}
+16640249c6e56cde0bc73c84b2e04e50
+  eliza57 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Can you elaborate on that?"#) -}
+65965ac526298b2f325b837e86cce6aa
+  eliza58 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Let's change focus a bit... Tell me about your family."#) -}
+977126f78e78d8cdbd6622c88f6824b6
+  eliza59 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Please tell me more."#) -}
+6e82d6a7b42efd1f7501dd60f02f91c3
+  eliza6 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza324
+                   Main.eliza7) -}
+25379605ca402e26ead920e7d708923b
+  eliza60 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "*"#) -}
+48d374f63ef82d11153da0157928aba0
+  eliza61 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza68, Main.eliza62)) -}
+fb299a0883e8270e382ed29dff102610
+  eliza62 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza67
+                   Main.eliza63) -}
+0a085bdd598e1d6ff18f6bd4b1947011
+  eliza63 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza66
+                   Main.eliza64) -}
+f1c306ba655f2a2839dca2871c580ad0
+  eliza64 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza65
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+29614a521c717ade228e09b0878d5b59
+  eliza65 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Thank you, that will be $150.  Have a good day!"#) -}
+7534899e33e618ba8d06d43c79e40365
+  eliza66 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Good-bye."#) -}
+4033251f871321abb5f96727a2053763
+  eliza67 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Thank you for talking with me."#) -}
+385917acb8fa7f6749766805ec1a569e
+  eliza68 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "quit"#) -}
+bbdcbab41a0c09ad02a3627d6884da63
+  eliza69 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza78, Main.eliza70)) -}
+734470fdd8fb57f2fca3d13371a71714
+  eliza7 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza314
+                   Main.eliza8) -}
+965c0e60f80a971629efa0edc69f4253
+  eliza70 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza77
+                   Main.eliza71) -}
+c68521fa1e5b009c358b108a21d7e4aa
+  eliza71 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza76
+                   Main.eliza72) -}
+af7bad87925a33b5f00e87807d11b1ff
+  eliza72 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza75
+                   Main.eliza73) -}
+26cb3795d48fe523e73ce3d21241e3a2
+  eliza73 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza74
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+91bb4d56b5cc7647b2d2bae37bea1c6a
+  eliza74 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why don't you tell me?"#) -}
+83a648bfb8257b9f94e2107f5a7e3647
+  eliza75 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Perhaps the answer lies within yourself?"#) -}
+decb23046c2e76f049cb7f15a750baf1
+  eliza76 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Please consider whether you can answer your own question."#) -}
+5b2e2a32536f1aa2b3310958ab7ee62a
+  eliza77 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Why do you ask that?"#) -}
+662720e0897767119f64dbe9dc60719b
+  eliza78 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "* ?"#) -}
+2cdbefba1425e5ce66c1aa8fd6cbff92
+  eliza79 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza90, Main.eliza80)) -}
+a30c7bb7742707aecedb67e8bfeb6a04
+  eliza8 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza310
+                   Main.eliza9) -}
+32b598dd7fc064fe6a6e0a604603959f
+  eliza80 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza89
+                   Main.eliza81) -}
+bc18c974b982ada9eb6d8706138f1bff
+  eliza81 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza88
+                   Main.eliza82) -}
+4a9195256d6391c9fd4f4812b1383213
+  eliza82 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza87
+                   Main.eliza83) -}
+8f104740fc2a2fd3e339ceacabf0f2b7
+  eliza83 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza86
+                   Main.eliza84) -}
+85923d3cd6a30ffc00db48e62e1b301c
+  eliza84 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza85
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+35b24a3f5245a10ab7a64abe64f126a3
+  eliza85 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How do you think your childhood experiences relate to your feelings today?"#) -}
+4d9dcc2340af60e8cb8eedc356344c5f
+  eliza86 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Did the other children sometimes tease you?"#) -}
+497e41cd8ce91c3cd3b31c0f4076239b
+  eliza87 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Do you remember any dreams or nightmares from childhood?"#) -}
+1710f6f60479c7170bc5fffd9771eb7e
+  eliza88 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "What is your favorite childhood memory?"#) -}
+8082a17acb2d8e4c182513ad99a15249
+  eliza89 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Did you have close friends as a child?"#) -}
+2062d31e9e550ff6b182af7574df4558
+  eliza9 :: [([GHC.Types.Char], [[GHC.Types.Char]])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [[GHC.Types.Char]])
+                   Main.eliza302
+                   Main.eliza10) -}
+2d493169555dd486af22ac43df03da19
+  eliza90 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "* child *"#) -}
+6ac29e987b9fca571c2401886a5187ab
+  eliza91 :: ([GHC.Types.Char], [[GHC.Types.Char]])
+  {- Strictness: m, Unfolding: ((Main.eliza102, Main.eliza92)) -}
+244c6df14a7236402d09ca709c2a434b
+  eliza92 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza101
+                   Main.eliza93) -}
+7e67eb4e6f88dac6684ae48ae8641146
+  eliza93 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza100
+                   Main.eliza94) -}
+fc9f94ae3f4fc364fa75982ae0598c23
+  eliza94 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza99
+                   Main.eliza95) -}
+a9fac7ac95d8d1651e3277038bc8ec1c
+  eliza95 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza98
+                   Main.eliza96) -}
+4afb48af051a0102fcdc362b9dbe0f24
+  eliza96 :: [[GHC.Types.Char]]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Main.eliza97
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+9d546dd50dfef21762ef710d97596965
+  eliza97 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Do you have trouble showing affection with your family?"#) -}
+caf7fd5288a63799ff22207d3769f9de
+  eliza98 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Does your relationship with your father relate to your feelings today?"#) -}
+f3843fc52cb453256e51dba7bb62e1dd
+  eliza99 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "How do you feel about your father?"#) -}
+5f82ccf120d43f4bf68fc0caad920ea4
+  main :: GHC.Types.IO ()
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+b86a28ff9d856afba485fe09f774e315
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Chatterbot.chatterbot1 Main.main2 Main.eliza) -}
+7f38a38ed1abd803cd152815bc2666f7
+  main2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Eliza"#) -}
+90cee82a102d9498e48d5514aa8caefc
+  main3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,232 @@
+
+==================== FINAL INTERFACE ====================
+2017-05-05 12:14:21.3906374 UTC
+
+interface assignment2-0.1.0.0-E3zHz19BlhKIYINWrcSGO6:Lib 8002
+  interface hash: c05b4f24b12df90180bae241f6444c55
+  ABI hash: bf098d8ab937bf2e74623bd4cf7972a0
+  export-list hash: 1c1273bc2e980963515a906a8004ea78
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 60831682a37a02a996a9ac6f4cd42371
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.maximaBy
+  Lib.optAlignments
+  Lib.optAlignments'
+  Lib.outputOptAlignments
+  Lib.similarityScore
+  Lib.similarityScore'
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Arrow 9a802c51e2a1c4a0e857ddd71ab60f93
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:Data.Tuple b07f695e7ce8fe20cc8a32abf62f60ec
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+25313e85d47f3acc173b2bae1ca8398a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
+26be69585c6bca576e05be87239064f2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib"#) -}
+0c3815f9e38201661627a0e610ece091
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "assignment2-0.1.0.0-E3zHz19BlhKIYINWrcSGO6"#) -}
+68f83a822771dbd10f815a597732e4dc
+  $wgo :: [GHC.Types.Int] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
+c3285b00697ad5e1d91a56ae587393d8
+  $wsimilarityScore ::
+    GHC.Base.String -> GHC.Base.String -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: [0] -}
+3435b6b0423509063b2ffab7f1d13809
+  type AlignmentType = (GHC.Base.String, GHC.Base.String)
+74e89f0680cfad8b1950d592147eee81
+  maximaBy :: GHC.Classes.Ord b => (a -> b) -> [a] -> [a]
+  {- Arity: 3, Strictness: <L,U(1*U,A,A,A,A,A,1*U,A)><L,C(U)><S,U>,
+     Unfolding: (\ @ b
+                   @ a
+                   ($dOrd :: GHC.Classes.Ord b)
+                   (eta :: a -> b)
+                   (eta1 :: [a]) ->
+                 let {
+                   lvl12 :: b
+                   = GHC.List.maximum @ b $dOrd (GHC.Base.map @ a @ b eta eta1)
+                 } in
+                 let {
+                   $dEq :: GHC.Classes.Eq b = GHC.Classes.$p1Ord @ b $dOrd
+                 } in
+                 letrec {
+                   go1 :: [a] -> [a] {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [a]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ a
+                       : y ys
+                       -> case GHC.Classes.== @ b $dEq (eta y) lvl12 of wild1 {
+                            GHC.Types.False -> go1 ys
+                            GHC.Types.True -> GHC.Types.: @ a y (go1 ys) } }
+                 } in
+                 go1 eta1) -}
+6b5dcb9a5e9deb81a58f4e86d3b1e72d
+  maximaBy1 :: GHC.Types.Int
+  {- Strictness: x -}
+eabcacbe052c68e22ab26f2aa751d5aa
+  maximaBy_$smaximaBy :: (a -> GHC.Types.Int) -> [a] -> [a]
+  {- Arity: 2, Strictness: <L,C(U(U))><S,U>,
+     Unfolding: (\ @ a (eta :: a -> GHC.Types.Int) (eta1 :: [a]) ->
+                 let {
+                   lvl12 :: GHC.Types.Int
+                   = case GHC.Base.map @ a @ GHC.Types.Int eta eta1 of wild {
+                       [] -> Lib.maximaBy1
+                       : ipv ipv1
+                       -> case ipv of ww { GHC.Types.I# ww1 ->
+                          case Lib.$wgo ipv1 ww1 of ww2 { DEFAULT -> GHC.Types.I# ww2 } } }
+                 } in
+                 letrec {
+                   go1 :: [a] -> [a] {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [a]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ a
+                       : y ys
+                       -> case eta y of wild1 { GHC.Types.I# x ->
+                          case lvl12 of wild2 { GHC.Types.I# y1 ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.==# x y1) of wild3 {
+                            GHC.Types.False -> go1 ys
+                            GHC.Types.True -> GHC.Types.: @ a y (go1 ys) } } } }
+                 } in
+                 go1 eta1) -}
+ec9c5b9459c60ffd1389cddb9a47f2e1
+  optAlignments ::
+    GHC.Base.String -> GHC.Base.String -> [Lib.AlignmentType]
+  {- Arity: 2, Strictness: <L,U><S,1*U> -}
+7267531e8f67942140f23e2d2c50d0d2
+  optAlignments' ::
+    GHC.Base.String -> GHC.Base.String -> [Lib.AlignmentType]
+  {- Arity: 2, Strictness: <S,U><S,U> -}
+99c995c18323f21f2e84e8595f46a3b5
+  outputOptAlignments ::
+    GHC.Base.String -> GHC.Base.String -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.outputOptAlignments1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+27cd15bdde8b795ece60607875a19bce
+  outputOptAlignments1 ::
+    GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (string1 :: GHC.Base.String)
+                   (string2 :: GHC.Base.String)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 let {
+                   alignments :: [Lib.AlignmentType]
+                   = Lib.optAlignments' string1 string2
+                 } in
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        (GHC.CString.unpackAppendCString#
+                           "\n\
+                           \There are "#
+                           (case GHC.List.$wlenAcc
+                                   @ (GHC.Base.String, GHC.Base.String)
+                                   alignments
+                                   0# of ww2 { DEFAULT ->
+                            case GHC.Show.$wshowSignedInt
+                                   0#
+                                   ww2
+                                   (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                            GHC.Base.++
+                              @ GHC.Types.Char
+                              (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                              Lib.outputOptAlignments4 } }))
+                        GHC.Types.True
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case Lib.outputOptAlignments3
+                        alignments
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   (GHC.CString.unpackAppendCString#
+                      "There were "#
+                      (case GHC.List.$wlenAcc
+                              @ (GHC.Base.String, GHC.Base.String)
+                              alignments
+                              0# of ww2 { DEFAULT ->
+                       case GHC.Show.$wshowSignedInt
+                              0#
+                              ww2
+                              (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                       GHC.Base.++
+                         @ GHC.Types.Char
+                         (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                         Lib.outputOptAlignments2 } }))
+                   GHC.Types.True
+                   ipv2 } }) -}
+22e7d26e929a7733e25b74e89389e740
+  outputOptAlignments2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   " optimal alignments!"#) -}
+dc74df9982348e1565848759128a390e
+  outputOptAlignments3 ::
+    [(GHC.Base.String, GHC.Base.String)]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,1*U><S,U> -}
+a4c6738968c5063be1371e954db02cf8
+  outputOptAlignments4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   " optimal alignments:\n"#) -}
+df1964f96f966099e1890019eceb77ff
+  similarityScore ::
+    GHC.Base.String -> GHC.Base.String -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Base.String) (w1 :: GHC.Base.String) ->
+                 case Lib.$wsimilarityScore w w1 of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+8caa7ea4258f76fb100fc34e220531d7
+  similarityScore' ::
+    GHC.Base.String -> GHC.Base.String -> GHC.Types.Int
+  {- Arity: 2, Strictness: <S,U><S,U> -}
+"SPEC maximaBy @ Int _" [ALWAYS] forall @ a
+                                        ($dOrd :: GHC.Classes.Ord GHC.Types.Int)
+  Lib.maximaBy @ GHC.Types.Int @ a $dOrd
+  = Lib.maximaBy_$smaximaBy @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
