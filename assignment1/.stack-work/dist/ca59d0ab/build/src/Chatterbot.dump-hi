@@ -1,0 +1,900 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-08 17:31:55.8443722 UTC
+
+interface andyassignment1-0.1.0.0-KEs0Ng7CFVRAYpqFMpnDcj:Chatterbot 8002
+  interface hash: 7ac8d01f5c21598fbbb637138d8b542d
+  ABI hash: 6b56247b445af2c4f1300d21f15abe27
+  export-list hash: bf510beeacf5cbbf099d7fb3309458ad
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 60831682a37a02a996a9ac6f4cd42371
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Chatterbot.chatterbot
+  Chatterbot.endOfDialog
+  Chatterbot.longerWildcardMatch
+  Chatterbot.match
+  Chatterbot.matchCheck
+  Chatterbot.matchTest
+  Chatterbot.prepare
+  Chatterbot.present
+  Chatterbot.reduce
+  Chatterbot.reductions
+  Chatterbot.reductionsApply
+  Chatterbot.reflect
+  Chatterbot.reflections
+  Chatterbot.rulesApply
+  Chatterbot.rulesCompile
+  Chatterbot.singleWildcardMatch
+  Chatterbot.stateOfMind
+  Chatterbot.substitute
+  Chatterbot.substituteCheck
+  Chatterbot.substituteTest
+  Chatterbot.testPattern
+  Chatterbot.testString
+  Chatterbot.testSubstitutions
+  Chatterbot.transformationApply
+  Chatterbot.transformationsApply
+  Chatterbot.BotBrain
+  Chatterbot.Phrase
+  Chatterbot.PhrasePair
+module dependencies: Utilities
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog*
+                      time-1.6.0.1@time-1.6.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  Utilities 65b97d02827f3b24e33b11cf4e32604a
+  exports: eb999c94f618f1423b8f997fe074fe6e
+  map2 e0689dd2292869a38af471c8443b3669
+import  -/  base-4.9.1.0:Data.Char c49b58282af11503cc838e1052cf6b83
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Unicode 7b64ed854a326c2c5bb224f237ed4a0b
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog:System.Random 4c90117f915e12291e0c5f588320bf66
+6870d2e9e182a458e12e89a6e47593f4
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Chatterbot.$trModule2
+                   Chatterbot.$trModule1) -}
+890bf9b4951304418a61c6a84262e05f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Chatterbot"#) -}
+617d858cd3ce047abe4b1afda88a6550
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "andyassignment1-0.1.0.0-KEs0Ng7CFVRAYpqFMpnDcj"#) -}
+5cadbab962c4f125d1713df7590b71d2
+  $wchatterbot ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><S,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Base.String)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        (GHC.CString.unpackAppendCString#
+                           "\n\
+                           \\n\
+                           \Hi! I am "#
+                           (GHC.Base.++ @ GHC.Types.Char w Chatterbot.chatterbot4))
+                        GHC.Types.True
+                        w1 of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Chatterbot.chatterbot3
+                        GHC.Types.False
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 letrec {
+                   botloop :: GHC.Prim.State# GHC.Prim.RealWorld
+                              -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                     case GHC.IO.Handle.Internals.wantReadableHandle_1
+                            @ GHC.Base.String
+                            GHC.IO.Handle.Text.hGetLine4
+                            GHC.IO.Handle.FD.stdin
+                            GHC.IO.Handle.Text.hGetLine2
+                              `cast`
+                            (<GHC.IO.Handle.Types.Handle__>_R
+                             ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))
+                            s of ds3 { (#,#) ipv4 ipv5 ->
+                     case GHC.IO.Handle.Text.hPutStr2
+                            GHC.IO.Handle.FD.stdout
+                            (GHC.Base.++
+                               @ GHC.Types.Char
+                               w
+                               (GHC.CString.unpackAppendCString#
+                                  ": "#
+                                  (case Data.OldList.words (Chatterbot.chatterbot_go ipv5) of wild {
+                                     [] -> GHC.Types.[] @ GHC.Types.Char
+                                     : w2 ws
+                                     -> GHC.Base.++
+                                          @ GHC.Types.Char
+                                          w2
+                                          (Data.OldList.unwords_go ws) })))
+                            GHC.Types.True
+                            ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                     case GHC.Base.eqString
+                            (GHC.Base.map
+                               @ GHC.Types.Char
+                               @ GHC.Types.Char
+                               GHC.Unicode.toLower
+                               ipv5)
+                            Chatterbot.chatterbot2 of wild {
+                       GHC.Types.False
+                       -> case GHC.IO.Handle.Text.hPutStr2
+                                 GHC.IO.Handle.FD.stdout
+                                 Chatterbot.chatterbot3
+                                 GHC.Types.False
+                                 ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                          botloop ipv8 }
+                       GHC.Types.True -> (# ipv6, GHC.Tuple.() #) } } }
+                 } in
+                 botloop ipv2 } }) -}
+ed917fb9f5e9a427d9258e586ce0cd04
+  type BotBrain = [(Chatterbot.Phrase, [Chatterbot.Phrase])]
+546f9c9ea18fc8e95784ba3c9e9f7ccd
+  type Phrase = [GHC.Base.String]
+ffbd61e3cc2f2bb0bb32aa302da17b90
+  type PhrasePair = (Chatterbot.Phrase, Chatterbot.Phrase)
+7c21be1ecf394cf330834c96f4abef9d
+  chatterbot ::
+    GHC.Base.String
+    -> [(GHC.Base.String, [GHC.Base.String])] -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Chatterbot.chatterbot1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R <[(GHC.Base.String, [GHC.Base.String])]>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+c4f63ccc4d28f124bb82a8c0325eaf6c
+  chatterbot1 ::
+    GHC.Base.String
+    -> [(GHC.Base.String, [GHC.Base.String])]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,U><L,A><S,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Base.String)
+                   (w1 :: [(GHC.Base.String, [GHC.Base.String])])
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Chatterbot.$wchatterbot w w2) -}
+7a26e7578ced8b7ff6f15b0d5ae93804
+  chatterbot2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "quit"#) -}
+bc03acd9881f5d3b80015c0e15246c73
+  chatterbot3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \: "#) -}
+934556d8d9fa9893b1bbf4ae25212af6
+  chatterbot4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ". How are you?"#) -}
+9b769235b80f56c399fca47495f80b6b
+  chatterbot_go :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+b8c768e9f5927268f0c6ba2b0f32c307
+  endOfDialog :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [GHC.Types.Char]) ->
+                 GHC.Base.eqString
+                   (GHC.Base.build
+                      @ GHC.Types.Char
+                      (\ @ b1
+                         (c :: GHC.Types.Char -> b1 -> b1)[OneShot]
+                         (n :: b1)[OneShot] ->
+                       GHC.Base.foldr
+                         @ GHC.Types.Char
+                         @ b1
+                         (GHC.Base.mapFB
+                            @ GHC.Types.Char
+                            @ b1
+                            @ GHC.Types.Char
+                            c
+                            GHC.Unicode.toLower)
+                         n
+                         x))
+                   Chatterbot.chatterbot2) -}
+57198bd92e72daf68d09d81a60c3eb9f
+  longerWildcardMatch ::
+    GHC.Classes.Eq a => [a] -> [a] -> GHC.Base.Maybe [a]
+  {- Arity: 3, Strictness: <L,A><S,1*U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a ($dEq :: GHC.Classes.Eq a) (ds :: [a]) (ds1 :: [a]) ->
+                 case ds of wild {
+                   [] -> Chatterbot.longerWildcardMatch1 @ a
+                   : wc ps
+                   -> case ds1 of wild1 {
+                        [] -> Chatterbot.longerWildcardMatch1 @ a
+                        : x xs -> GHC.Base.Nothing @ [a] } }) -}
+f2d5d5e92baf81b15908f9affda5872f
+  longerWildcardMatch1 :: GHC.Base.Maybe [a]
+  {- Strictness: x -}
+99ccaf5834fec89e4e9cb00964d41ed0
+  match :: GHC.Classes.Eq a => a -> [a] -> [a] -> GHC.Base.Maybe [a]
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,A><L,A><L,A><L,A>,
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (ds :: a)
+                   (ds1 :: [a])
+                   (ds2 :: [a]) ->
+                 GHC.Base.Nothing @ [a]) -}
+b960e78e53cb11c496e550f55229f74a
+  matchCheck :: GHC.Types.Bool
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True) GHC.Types.False -}
+82a529967cfcaf12068ab1131e9208fb
+  matchTest :: GHC.Base.Maybe [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Base.Nothing @ [GHC.Types.Char]) -}
+2055d02732349155d7642f3cfe5f87dd
+  prepare :: GHC.Base.String -> Chatterbot.Phrase
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: [GHC.Types.Char]) ->
+                 Data.OldList.words (Chatterbot.chatterbot_go x)) -}
+46955ba0ec3fcf3ade6d9996fb1d240b
+  present :: Chatterbot.Phrase -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True) Data.OldList.unwords -}
+356833678a37c919a306e2f3d4b78b5d
+  reduce :: Chatterbot.Phrase -> Chatterbot.Phrase
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Base.id @ Chatterbot.Phrase) -}
+43b03d936cacf25153be4c8fba831a70
+  reductions :: [Chatterbot.PhrasePair]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Base.String], [GHC.Base.String])
+                   Chatterbot.reductions47
+                   Chatterbot.reductions1) -}
+02605b2a529fe03817261a8a4e2a86d6
+  reductions1 :: [([GHC.Base.String], [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Base.String], [GHC.Base.String])
+                   Chatterbot.reductions44
+                   Chatterbot.reductions2) -}
+10046c0061992936cfa86dfb6b2ae017
+  reductions10 :: [([GHC.Base.String], [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Base.String], [GHC.Base.String])
+                   Chatterbot.reductions11
+                   (GHC.Types.[] @ ([GHC.Base.String], [GHC.Base.String]))) -}
+189e46c430d7d890314def3eecd10c92
+  reductions11 :: ([GHC.Base.String], [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reductions14, Chatterbot.reductions12)) -}
+c4bb1537c1613ff9ec225c82dfe32bfc
+  reductions12 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions13) -}
+83f76feea9b7f4e15a6ef9bac183519f
+  reductions13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "hello *"#) -}
+c8042204b268f3a89ce6e5f6998cf34b
+  reductions14 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions15) -}
+7af3704a86a6e437f085327e93cc3830
+  reductions15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "hi *"#) -}
+096d7dd873665bc5a769b540dfd7cf75
+  reductions16 :: ([GHC.Base.String], [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reductions19, Chatterbot.reductions17)) -}
+79afe124081dda304ae9e16e9b11cabd
+  reductions17 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions18) -}
+ccc906f34b2bfbff512eb9d0ed2f034c
+  reductions18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "i am *"#) -}
+dc6eadf287cb4af5a73d135434046163
+  reductions19 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions20) -}
+ecce5bc5ddc23f81d60e5aa0a400afb3
+  reductions2 :: [([GHC.Base.String], [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Base.String], [GHC.Base.String])
+                   Chatterbot.reductions39
+                   Chatterbot.reductions3) -}
+43d6e857442b0a1aca07124831024778
+  reductions20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "i am very *"#) -}
+f98ebdcb02916d373827728391cde571
+  reductions21 :: ([GHC.Base.String], [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reductions24, Chatterbot.reductions22)) -}
+4954332743ccec8a299942b2ea285202
+  reductions22 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions23) -}
+c4fac751639db5c3815546f2c2b485b7
+  reductions23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "are you *"#) -}
+59a63fdf71b6aab40c595be2baff6e00
+  reductions24 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions_x1) -}
+a876f60efa0f871b7af71eb25d32ee1b
+  reductions25 :: ([GHC.Base.String], [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reductions28, Chatterbot.reductions26)) -}
+3b5281a959c24e35db3fb5f4ecab210e
+  reductions26 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions27) -}
+ec40aac0feb537c22ae190fbe6e9062c
+  reductions27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "what is *"#) -}
+891d948fe27b79cc8879bea499ba62b2
+  reductions28 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions_x2) -}
+0117fcfe264806979319077480218a91
+  reductions29 :: ([GHC.Base.String], [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reductions32, Chatterbot.reductions30)) -}
+e58d4f6c838d4d267b6f0de9c0d545e2
+  reductions3 :: [([GHC.Base.String], [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Base.String], [GHC.Base.String])
+                   Chatterbot.reductions37
+                   Chatterbot.reductions4) -}
+d19e49bf7d26bcedf656451b68ee211e
+  reductions30 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions31) -}
+d7833c0ecca5f4f7535e6d55aaf19ec7
+  reductions31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "who is *"#) -}
+ba48f534949ba49bcf7ebfbb142b0223
+  reductions32 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions_x3) -}
+eb240cdaf42fc3346705681a3dd59591
+  reductions33 :: ([GHC.Base.String], [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reductions34, Chatterbot.reductions26)) -}
+47d69173824a47aec8e9e90895364f4d
+  reductions34 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions_x4) -}
+086b6bb59065be689843e3b26c131960
+  reductions35 :: ([GHC.Base.String], [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reductions36, Chatterbot.reductions30)) -}
+ecd32f1ce15478b9353e1e9a68fd1a9f
+  reductions36 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions_x5) -}
+cb43ae10231dd1faf31997936da89fa9
+  reductions37 :: ([GHC.Base.String], [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reductions38, Chatterbot.reductions22)) -}
+076a5a498c0c567e5fe174ff5a2ec4b7
+  reductions38 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions_x6) -}
+244c7b76f0f9de3cef889f5fdf608c34
+  reductions39 :: ([GHC.Base.String], [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reductions42, Chatterbot.reductions40)) -}
+739315c67b6a2661d0f181d7e821a757
+  reductions4 :: [([GHC.Base.String], [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Base.String], [GHC.Base.String])
+                   Chatterbot.reductions35
+                   Chatterbot.reductions5) -}
+1ad7a314f9a3470e675581e021346be6
+  reductions40 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions41) -}
+46ca08cc33fd707098211bdb515f687b
+  reductions41 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "*"#) -}
+55b7079b30da0db7e5eb8a1ab3786d0b
+  reductions42 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions43) -}
+2c3d9da126d0c264eb4e0a0172349e9a
+  reductions43 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "could you *"#) -}
+de18d78a3fcc6e03a51ef5c28cea5637
+  reductions44 :: ([GHC.Base.String], [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reductions45, Chatterbot.reductions40)) -}
+6fc9d23bebe796464e185d7292379a20
+  reductions45 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions46) -}
+bd853a9cc852209c33a3b2500d921328
+  reductions46 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "can you *"#) -}
+1a9eb15cd7432e2e860bfa0ad4c07d48
+  reductions47 :: ([GHC.Base.String], [GHC.Base.String])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reductions48, Chatterbot.reductions40)) -}
+3dec0266119176de90211f38bcb602e9
+  reductions48 :: [GHC.Base.String]
+  {- Unfolding: (Data.OldList.words Chatterbot.reductions49) -}
+18614cacccfa724b8bb21832b1a06317
+  reductions49 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "please *"#) -}
+5a547bff5abee93c59b490a90defd028
+  reductions5 :: [([GHC.Base.String], [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Base.String], [GHC.Base.String])
+                   Chatterbot.reductions33
+                   Chatterbot.reductions6) -}
+d8169fefd47c626269389262525f911b
+  reductions6 :: [([GHC.Base.String], [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Base.String], [GHC.Base.String])
+                   Chatterbot.reductions29
+                   Chatterbot.reductions7) -}
+d38d856f80e263bc33d42ac8c9c26d2c
+  reductions7 :: [([GHC.Base.String], [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Base.String], [GHC.Base.String])
+                   Chatterbot.reductions25
+                   Chatterbot.reductions8) -}
+1bea2b824e3c94a8b961e3776fb78977
+  reductions8 :: [([GHC.Base.String], [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Base.String], [GHC.Base.String])
+                   Chatterbot.reductions21
+                   Chatterbot.reductions9) -}
+2da695f317c68911ffb741b74f6c03a1
+  reductions9 :: [([GHC.Base.String], [GHC.Base.String])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Base.String], [GHC.Base.String])
+                   Chatterbot.reductions16
+                   Chatterbot.reductions10) -}
+c94ed99fe8b751a6b654caa0ac0df8d6
+  reductionsApply ::
+    [Chatterbot.PhrasePair] -> Chatterbot.Phrase -> Chatterbot.Phrase
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: [Chatterbot.PhrasePair]) (eta :: Chatterbot.Phrase) ->
+                 GHC.Base.id @ Chatterbot.Phrase eta) -}
+898bea76df56f8cdd79c21b82e7b68d2
+  reductions_x1 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "are you very *"#) -}
+387b74b7fc8e111ef738cbbedcf4801f
+  reductions_x2 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "do you know what * is"#) -}
+319a9b17446fba5454cbecf9a27d92b9
+  reductions_x3 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "do you know who * is"#) -}
+ef8cd55250b25ce8793470e01ba5cf5b
+  reductions_x4 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "tell me what * is"#) -}
+71e219e048cbfe1821a08d8694962812
+  reductions_x5 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "tell me who * is"#) -}
+c55297f8a7e91d5d6873c00891ebc5a0
+  reductions_x6 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "tell me if you are *"#) -}
+fd5c8a3fcf49714e365a1a45e4035fa1
+  reflect :: Chatterbot.Phrase -> Chatterbot.Phrase
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Base.id @ Chatterbot.Phrase) -}
+d5ccce75b8a2d7f35a4a8e8ba445e8aa
+  reflections :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections56
+                   Chatterbot.reflections1) -}
+85865a0bd1caae8ade7d967e478821be
+  reflections1 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections53
+                   Chatterbot.reflections2) -}
+b1f69d79146fac7fd74f45c310ef82ac
+  reflections10 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections31
+                   Chatterbot.reflections11) -}
+49046c2abf686d3a6dd2e793c776a429
+  reflections11 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections28
+                   Chatterbot.reflections12) -}
+72258cf0b921e4d4206596427a11af1f
+  reflections12 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections25
+                   Chatterbot.reflections13) -}
+7792694dadd47d4bc4391ca96e6e6d38
+  reflections13 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections22
+                   Chatterbot.reflections14) -}
+2229ef10d9818f83df1e46d4040614ad
+  reflections14 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections19
+                   Chatterbot.reflections15) -}
+e906c18bcb27a8ad8380ded1828cde32
+  reflections15 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections16
+                   (GHC.Types.[] @ ([GHC.Types.Char], [GHC.Types.Char]))) -}
+1995ff95cb7a955df5f6a367be44d8f1
+  reflections16 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections18,
+                  Chatterbot.reflections17)) -}
+7c7d953e5fa3799e06f3fc2c7c422112
+  reflections17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "me"#) -}
+de757a915f111b1320b1abdc1e0f139c
+  reflections18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "you"#) -}
+7702e6857fba2209c0d5f0310bd6d83b
+  reflections19 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections21,
+                  Chatterbot.reflections20)) -}
+9efbf318aadd205d4e6b32586f569bb0
+  reflections2 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections51
+                   Chatterbot.reflections3) -}
+435fb3674ae91f96f88a63e33b27b537
+  reflections20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "mine"#) -}
+651bc62d298694183bdb47064271bfa7
+  reflections21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "yours"#) -}
+7058b06d9d6bd4cb091498624f948f25
+  reflections22 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections24,
+                  Chatterbot.reflections23)) -}
+75f61b9c224ba469e42f0dd52245318f
+  reflections23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "my"#) -}
+b6f16025d5ac9644fb69af3669068ae9
+  reflections24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "your"#) -}
+b6fbb49409179a4c66acc0e52ac87cd5
+  reflections25 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections27,
+                  Chatterbot.reflections26)) -}
+4db1e12fee61e91ae4341a13d969efba
+  reflections26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "i will"#) -}
+5551b4628a0bd32492fd1a3cfc64e327
+  reflections27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "you'll"#) -}
+43144498ba3d8c3c9e7a1de0de671a16
+  reflections28 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections30,
+                  Chatterbot.reflections29)) -}
+aef1aee918560917ff30df1dcb8e0faa
+  reflections29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "i have"#) -}
+b263a9107747cd2d5eff830b0943affa
+  reflections3 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections48
+                   Chatterbot.reflections4) -}
+c0b2d23c3625aa05c3ec6be700cd40f3
+  reflections30 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "you've"#) -}
+f6de1013673d4c82927beafab4a0c152
+  reflections31 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections33,
+                  Chatterbot.reflections32)) -}
+2fef7a389fb8869d197b1417df29a923
+  reflections32 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "i am"#) -}
+0320b949baa83f864c6f373330ecf5d3
+  reflections33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "you're"#) -}
+65cb5f940279d02e131af4082f966f3e
+  reflections34 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections36,
+                  Chatterbot.reflections35)) -}
+bde94da0074a52db622b0789a1f5f9d4
+  reflections35 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "am"#) -}
+6387b30768bf2355248eb49c7a0a0f53
+  reflections36 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "are"#) -}
+572107dd894185fbf4faf7e85ca7f789
+  reflections37 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections17,
+                  Chatterbot.reflections18)) -}
+3ed1bdddd856dd4b26c68037ea4f6ef4
+  reflections38 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections23,
+                  Chatterbot.reflections24)) -}
+946cf3ac4b4cf1f6a557c814bd5f02ef
+  reflections39 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections41,
+                  Chatterbot.reflections40)) -}
+a94a962ab8bfe7b861512b3aa2c4925d
+  reflections4 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections45
+                   Chatterbot.reflections5) -}
+05bcd00c5a56411978e73d5d6751f221
+  reflections40 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "you will"#) -}
+422912525c1de5eb977c26f76e865718
+  reflections41 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "i'll"#) -}
+5d80f7bf2dfc1592c06696b6f98cccbf
+  reflections42 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections44,
+                  Chatterbot.reflections43)) -}
+6e4189100f07a1fe86fe079265d92e46
+  reflections43 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "you have"#) -}
+5e80697a00cab790e4f1aed1880e4976
+  reflections44 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "i've"#) -}
+0f44ea7142d75169a87d65b3d709aec1
+  reflections45 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections47,
+                  Chatterbot.reflections46)) -}
+b7e5ed137a19e56032067eb1f8585afa
+  reflections46 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "you would"#) -}
+91bbe7ec23984306309666a02d13f6f9
+  reflections47 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "i'd"#) -}
+ef43efe001a13179dd543328df25cf21
+  reflections48 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections50,
+                  Chatterbot.reflections49)) -}
+49633f731cd40deb72d59ea2f6295916
+  reflections49 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "you are"#) -}
+eef8039285d3dc2a6dfc3580e5418f76
+  reflections5 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections42
+                   Chatterbot.reflections6) -}
+6f710cd349b6bb84c53541ec0541c3b4
+  reflections50 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "i'm"#) -}
+18dc6e85f674761e00eb9348e84bdceb
+  reflections51 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections52,
+                  Chatterbot.reflections18)) -}
+a986e5570d1f7332cabf6e07b764d630
+  reflections52 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "i"#) -}
+25d55327615beb97b2980be96f82f33e
+  reflections53 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections55,
+                  Chatterbot.reflections54)) -}
+07d3cc9f5d1f303d3dc993f7453a9c45
+  reflections54 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "were"#) -}
+90771adab34c7b72f8b4a5593a801333
+  reflections55 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "was"#) -}
+b13efaff96f183117302f2eea617c207
+  reflections56 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Chatterbot.reflections35,
+                  Chatterbot.reflections36)) -}
+69b004cefb35621b5e4616c1dafd5e81
+  reflections6 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections39
+                   Chatterbot.reflections7) -}
+be29e566c5ff52067ce025d2894c7eb9
+  reflections7 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections38
+                   Chatterbot.reflections8) -}
+7d321231bb440607a69f73f936deae4c
+  reflections8 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections37
+                   Chatterbot.reflections9) -}
+31f18f867583ea965432db9fd990cebd
+  reflections9 :: [([GHC.Types.Char], [GHC.Types.Char])]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Chatterbot.reflections34
+                   Chatterbot.reflections10) -}
+fab4438f2340338b0067b78b4d6aa263
+  rulesApply ::
+    [Chatterbot.PhrasePair] -> Chatterbot.Phrase -> Chatterbot.Phrase
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: [Chatterbot.PhrasePair]) (eta :: Chatterbot.Phrase) ->
+                 GHC.Base.id @ Chatterbot.Phrase eta) -}
+cbcfb976730687a78e33d65dd53be209
+  rulesCompile ::
+    [(GHC.Base.String, [GHC.Base.String])] -> Chatterbot.BotBrain
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: [(GHC.Base.String, [GHC.Base.String])]) ->
+                 GHC.Types.[] @ (Chatterbot.Phrase, [Chatterbot.Phrase])) -}
+46b5faa931cebf6ee89a7be9100bd8ae
+  singleWildcardMatch ::
+    GHC.Classes.Eq a => [a] -> [a] -> GHC.Base.Maybe [a]
+  {- Arity: 3, Strictness: <L,A><S,1*U><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a ($dEq :: GHC.Classes.Eq a) (ds :: [a]) (ds1 :: [a]) ->
+                 case ds of wild {
+                   [] -> Chatterbot.singleWildcardMatch1 @ a
+                   : wc ps
+                   -> case ds1 of wild1 {
+                        [] -> Chatterbot.singleWildcardMatch1 @ a
+                        : x xs -> GHC.Base.Nothing @ [a] } }) -}
+59af1dc82ed3d1e330dabef4b34f595f
+  singleWildcardMatch1 :: GHC.Base.Maybe [a]
+  {- Strictness: x -}
+97e3f7c9968fba86851da56c5350694b
+  stateOfMind ::
+    Chatterbot.BotBrain
+    -> GHC.Types.IO (Chatterbot.Phrase -> Chatterbot.Phrase)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Chatterbot.stateOfMind1
+                  `cast`
+                (<Chatterbot.BotBrain>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Chatterbot.Phrase -> Chatterbot.Phrase>_R)) -}
+bc1fb21eb38f4f76b5f07a28425322fd
+  stateOfMind1 ::
+    Chatterbot.BotBrain
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Chatterbot.Phrase -> Chatterbot.Phrase #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Chatterbot.BotBrain)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Chatterbot.stateOfMind2 eta) -}
+d787ae1643627bf5c8c3b5d4f14aba73
+  stateOfMind2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Chatterbot.Phrase -> Chatterbot.Phrase #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# s, GHC.Base.id @ Chatterbot.Phrase #)) -}
+d09b204f2996f77932fc534548df8f6e
+  substitute :: GHC.Classes.Eq a => a -> [a] -> [a] -> [a]
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,A><L,A><L,A><L,A>,
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (ds :: a)
+                   (ds1 :: [a])
+                   (ds2 :: [a]) ->
+                 GHC.Types.[] @ a) -}
+594fe0ab2e64c1cf427d5014cb4e93b5
+  substituteCheck :: GHC.Types.Bool
+  {- Unfolding: (GHC.Base.eqString
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Chatterbot.testString) -}
+091ee74edc1bb68181791aee47d3c9e7
+  substituteTest :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Types.[] @ GHC.Types.Char) -}
+28c2df647ea047c342aad7c06d2e632e
+  testPattern :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "a=*;"#) -}
+5619fb6de385295c0a25afb2edab16bb
+  testString :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "a=32;"#) -}
+ac4b94d59086fb3a526817aade922f8a
+  testSubstitutions :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "32"#) -}
+746eeeba0820308d4a546371ece4ccec
+  transformationApply ::
+    GHC.Classes.Eq a =>
+    a -> ([a] -> [a]) -> [a] -> ([a], [a]) -> GHC.Base.Maybe [a]
+  {- Arity: 5, HasNoCafRefs, Strictness: <L,A><L,A><L,A><L,A><L,A>,
+     Unfolding: InlineRule (5, True, True)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (ds :: a)
+                   (ds1 :: [a] -> [a])
+                   (ds2 :: [a])
+                   (ds3 :: ([a], [a])) ->
+                 GHC.Base.Nothing @ [a]) -}
+33f6c9362bff4b48d6b36a818868bf7d
+  transformationsApply ::
+    GHC.Classes.Eq a =>
+    a -> ([a] -> [a]) -> [([a], [a])] -> [a] -> GHC.Base.Maybe [a]
+  {- Arity: 5, HasNoCafRefs, Strictness: <L,A><L,A><L,A><L,A><L,A>,
+     Unfolding: InlineRule (5, True, True)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (ds :: a)
+                   (ds1 :: [a] -> [a])
+                   (ds2 :: [([a], [a])])
+                   (ds3 :: [a]) ->
+                 GHC.Base.Nothing @ [a]) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

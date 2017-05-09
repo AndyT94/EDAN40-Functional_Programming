@@ -1,0 +1,125 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-08 17:31:53.861545 UTC
+
+interface andyassignment1-0.1.0.0-KEs0Ng7CFVRAYpqFMpnDcj:Utilities 8002
+  interface hash: 69de399198d811f440687e1b9196102b
+  ABI hash: 65b97d02827f3b24e33b11cf4e32604a
+  export-list hash: eb999c94f618f1423b8f997fe074fe6e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 60831682a37a02a996a9ac6f4cd42371
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Utilities.fix
+  Utilities.map2
+  Utilities.mmap
+  Utilities.orElse
+  Utilities.pick
+  Utilities.try
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.Maybe ecf0c6f81372d9b58b142d5e758ea51b
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Real b88ae4a48c079652623073a5bbf5c9b0
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+edf555a9f2f6dbf9e0b151ba2b80fefa
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Utilities.$trModule2
+                   Utilities.$trModule1) -}
+50f65cec59cfea90171e530c4e42011a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Utilities"#) -}
+3897ec102b5c3b6c142f2be19261b3aa
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "andyassignment1-0.1.0.0-KEs0Ng7CFVRAYpqFMpnDcj"#) -}
+fb644e41b2cfe76211a47c711c8971f3
+  fix :: GHC.Classes.Eq a => (a -> a) -> a -> a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),U(C(C1(U)),A)><L,C(U)><L,U> -}
+e0689dd2292869a38af471c8443b3669
+  map2 :: (a -> b, c -> d) -> (a, c) -> (b, d)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(1*C1(U),1*C1(U))><S,1*U(U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b @ c @ d (ds :: (a -> b, c -> d)) (ds1 :: (a, c)) ->
+                 case ds of wild { (,) f1 f2 ->
+                 case ds1 of wild1 { (,) x1 x2 -> (f1 x1, f2 x2) } }) -}
+c6b0f5d92a7a101bc4b1876726bac45f
+  mmap :: (a -> b) -> GHC.Base.Maybe a -> GHC.Base.Maybe b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (f :: a -> b) (ds :: GHC.Base.Maybe a) ->
+                 case ds of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ b
+                   GHC.Base.Just x -> GHC.Base.Just @ b (f x) }) -}
+93198468742d35aa446bba84e036f260
+  orElse :: GHC.Base.Maybe a -> GHC.Base.Maybe a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (ds :: GHC.Base.Maybe a) (x :: GHC.Base.Maybe a) ->
+                 case ds of wild {
+                   GHC.Base.Nothing -> x
+                   GHC.Base.Just a1 -> GHC.Base.Just @ a a1 }) -}
+4cd3b7ae6f23949a0d724537056fb9e4
+  pick :: GHC.Real.RealFrac r => r -> [a] -> a
+  {- Arity: 3,
+     Strictness: <S(LLLLLLC(C(S))),U(1*U,A,A,A,A,A,1*C1(C1(U)))><L,U><S,U>,
+     Unfolding: (\ @ r
+                   @ a
+                   ($dRealFrac :: GHC.Real.RealFrac r)
+                   (eta :: r)
+                   (eta1 :: [a]) ->
+                 case GHC.Real.floor
+                        @ r
+                        $dRealFrac
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        (let {
+                           $dReal :: GHC.Real.Real r = GHC.Real.$p1RealFrac @ r $dRealFrac
+                         } in
+                         let {
+                           $dNum :: GHC.Num.Num r = GHC.Real.$p1Real @ r $dReal
+                         } in
+                         GHC.Num.*
+                           @ r
+                           $dNum
+                           eta
+                           (GHC.Num.fromInteger
+                              @ r
+                              $dNum
+                              (case GHC.List.$wlenAcc @ a eta1 0# of ww2 { DEFAULT ->
+                               GHC.Integer.Type.smallInteger ww2 }))) of ww { GHC.Types.I# ww1 ->
+                 GHC.List.$w!! @ a eta1 ww1 }) -}
+a7bf7f1e5a7fb8f40e4ad1ab2d90afcb
+  try :: (a -> GHC.Base.Maybe a) -> a -> a
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (f :: a -> GHC.Base.Maybe a) (x :: a) ->
+                 case f x of wild {
+                   GHC.Base.Nothing -> x GHC.Base.Just x1 -> x1 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
