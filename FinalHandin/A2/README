@@ -1,0 +1,27 @@
+-- Answer to question "1. General understanding of the problem"
+
+Goal is to find mcs of the two lists of ints. It is given
+from the instructions that the mcs length is 4. The mcs is also given as [3,2,3,9].
+[3,2,8,2,3,9,4,3,9]
+[1,3,2,3,7,9]
+
+[-, 3, 2, 8, 2, 3, 9, 4, 3, 9]
+[1, 3, 2, -, -, 3, 7, -, -, 9]
+
+In the two lists above we have 4 matches so lets set 
+scoreMatch = 1. If we set the other two parameters to 
+0 we would get the score 4 which corresponds to the mcs length.
+
+Lets test it:
+optAlignments' "328239439" "132379"
+[("-328239439","13--23--79"),("-328239439","132--3--79"),("-32823943-9","13--2---379"),("-32823943-9","132-----379"),("-32823943-9","13--23---79"),("-32823943-9","132--3---79"),("-328239439","13--23-7-9"),("-328239439","132--3-7-9"),("-3282394-39","13--23--7-9"),("-3282394-39","132--3--7-9"),("-328239439","13--237--9"),("-328239439","132--37--9"),("-328239-439","13--23-7--9"),("-328239-439","132--3-7--9"),("-32823-9439","13--237---9"),("-32823-9439","132--37---9"),("-32823-9439","13--2379---"),("-32823-9439","132--379---")]
+
+If we are correct(the matching *) should be present in the above. This is the case.
+This means that if we want to extract the mcs we could use optAlignments' and take the first
+pair. Lets pick ("-328239439","13--23--79"). Then a function should extract the matching elements
+into a list as follows:
+
+- 3 2 8 2 3 9 4 3 9
+1 3 - - 2 3 - - 7 9
+
+  3     2 3       9    = [3,2,3,9] the same as in the instructions.

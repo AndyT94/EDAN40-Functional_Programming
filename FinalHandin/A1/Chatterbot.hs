@@ -1,0 +1,257 @@
+module Chatterbot where
+import Utilities
+import System.Random
+import Data.Char
+import Control.Monad
+import Data.Maybe
+
+chatterbot :: String -> [(String, [String])] -> IO ()
+chatterbot botName botRules = do
+    putStrLn ("\n\nHi! I am " ++ botName ++ ". How are you?")
+    botloop
+  where
+    brain = rulesCompile botRules
+    botloop = do
+      putStr "\n: "
+      question <- getLine
+      answer <- stateOfMind brain
+      putStrLn (botName ++ ": " ++ (present . answer . prepare) question)
+      if (not . endOfDialog) question then botloop else return ()
+
+--------------------------------------------------------
+
+type Phrase = [String]
+type PhrasePair = (Phrase, Phrase)
+type BotBrain = [(Phrase, [Phrase])]
+
+
+--------------------------------------------------------
+-- | Takes a BotBrain consisting of possible answer
+--   patterns for different question patterns. This function
+--   returns a function that takes a Phrase and formulates
+--   an answer using one of the corresponding answer patterns.
+--   The used answer pattern is picked at random from the associated
+--   answer patterns.
+stateOfMind :: BotBrain -> IO (Phrase -> Phrase)
+stateOfMind brain = do
+    r <- randomIO :: IO Float
+    return (rulesApply $ (map.map2) (id, pick r) brain)
+
+-- | Applies a list of pattern transformations on an input Phrase.
+--   The intermediate result is reflected.
+rulesApply :: [PhrasePair] -> Phrase -> Phrase
+rulesApply = (fromMaybe [] .) . transformationsApply "*" reflect
+
+-- | Replaces each word in a phrase with its corresponding word in the map
+--   given by reflections.
+--
+--   Examples:
+--
+--   >>> reflect ["am", "my"]
+--   ["are","your"]
+reflect :: Phrase -> Phrase
+reflect = map $ try (`lookup` reflections)
+
+reflections =
+  [ ("am",     "are"),
+    ("was",    "were"),
+    ("i",      "you"),
+    ("i'm",    "you are"),
+    ("i'd",    "you would"),
+    ("i've",   "you have"),
+    ("i'll",   "you will"),
+    ("my",     "your"),
+    ("me",     "you"),
+    ("are",    "am"),
+    ("you're", "i am"),
+    ("you've", "i have"),
+    ("you'll", "i will"),
+    ("your",   "my"),
+    ("yours",  "mine"),
+    ("you",    "me")
+  ]
+
+
+---------------------------------------------------------------------------------
+
+endOfDialog :: String -> Bool
+endOfDialog = (=="quit") . map toLower
+
+present :: Phrase -> String
+present = unwords
+
+prepare :: String -> Phrase
+prepare = reduce . lowerWords . filter (not . flip elem ".,:;*!#%&|")
+
+-- | Function to take a string and splitting the string into words that are
+--   lowercase.
+--
+--   Examples:
+--
+--   >>> lowerWords "DaGs FoR Kaffe"
+--   ["dags","for","kaffe"]
+lowerWords :: String -> [String]
+lowerWords = words . map toLower
+
+-- | Compiles the given format to use the BotBrain format.
+--   Basically changes all Strings to the Phrase format where
+--   each word is a String and a ordinary sentences is encoded as several
+--   strings. Before converting the format all characters is converted into
+--   lowercase.
+--
+--   Examples:
+--
+--   >>> rulesCompile [("Hej *", ["Hello *", "Hi *"])]
+--   [(["hej","*"],[["hello","*"],["hi","*"]])]
+rulesCompile :: [(String, [String])] -> BotBrain
+rulesCompile = (map.map2) (lowerWords, map lowerWords)
+
+
+--------------------------------------
+
+
+reductions :: [PhrasePair]
+reductions = (map.map2) (words, words)
+  [ ( "please *", "*" ),
+    ( "can you *", "*" ),
+    ( "could you *", "*" ),
+    ( "tell me if you are *", "are you *" ),
+    ( "tell me who * is", "who is *" ),
+    ( "tell me what * is", "what is *" ),
+    ( "do you know who * is", "who is *" ),
+    ( "do you know what * is", "what is *" ),
+    ( "are you very *", "are you *" ),
+    ( "i am very *", "i am *" ),
+    ( "hi *", "hello *")
+  ]
+
+reduce :: Phrase -> Phrase
+reduce = reductionsApply reductions
+
+-- | Applies a list of reductions to reduce similar statements
+--   to the same statement. The function uses fixedpoint computation.
+--   When no further reductions can be fund the result is returned.
+--
+--   Examples:
+--
+--   >>> reductionsApply [(["i","am","very","*"],["i","am","*"])] $ words "i am very very very tired"
+--   ["i","am","tired"]
+reductionsApply :: [PhrasePair] -> Phrase -> Phrase
+reductionsApply = fix . try . applyReductions
+  where applyReductions = transformationsApply "*" id
+
+
+-------------------------------------------------------
+-- Match and substitute
+--------------------------------------------------------
+
+-- | Replaces all occurrences of wildcard in a list with the list given
+--   as the third argument
+--
+-- Examples:
+--
+-- >>> substitute 'x' "x^2 + e^x + (2 + x + 2) - x" "1337"
+-- "1337^2 + e^1337 + (2 + 1337 + 2) - 1337"
+-- >>> substitute 1 [1,2,3,1,2] [0]
+-- [0,2,3,0,2]
+substitute :: Eq a => a -> [a] -> [a] -> [a]
+substitute wildcard t s = concatMap picker t
+  where picker x | x == wildcard    = s
+                 | otherwise        = [x]
+
+
+-- | Tries to match two lists. The first parameter is the wildcard used in
+--   matching. The second parameter is the pattern list that is used for matching.
+--   The third parameter is the list in which the function looks for the pattern.
+--   If a match is found then a sublist bound to the first occurrence of wildcard
+--   in the pattern list is returned. If no match is found Nothing is returned.
+--
+--   Examples:
+--
+--   >>> match '*' "Hello*" "World"
+--   Nothing
+--   >>> match '*' "Lund *" "Lund University"
+--   Just "University"
+--   >>> match '*' "Lund *" "Gote University"
+--   Nothing
+match :: Eq a => a -> [a] -> [a] -> Maybe [a]
+match _ [] [] = Just []
+match _ [] _  = Nothing
+match _ _ []  = Nothing
+match wildcard allp@(p:ps) alls@(s:ss)
+    | p /= wildcard && p /= s           = Nothing
+    | p /= wildcard && p == s           = match wildcard ps ss
+    | otherwise                         = orElse swm lwm
+  where swm = singleWildcardMatch allp alls
+        lwm = longerWildcardMatch allp alls
+
+
+-- | Helper function for matching. This considers the cast where wc must be equal
+--   to wildcard. Returns the wildcard bound to the first element in the search list
+--   if the rest of the two lists matches. Returns Nothing otherwise.
+--
+--   Examples:
+--
+--   >>> singleWildcardMatch '*' "*do" "bdo"
+--   Just "b"
+--   >>> singleWildcardMatch '*' "*do" "dobedo"
+--   Nothing
+singleWildcardMatch, longerWildcardMatch :: Eq a => [a] -> [a] -> Maybe [a]
+singleWildcardMatch (wc:ps) (x:xs) = mmap (const [x]) $ match wc ps xs
+
+-- | Helper function for matching. Considers the case where the wildcard is
+--   bound to x appended to possible more elements found by calling match.
+--
+--   Examples:
+--
+--   >>> longerWildcardMatch '*' "*do" "dobedo"
+--   Just "dobe"
+longerWildcardMatch allp@(wc:ps) (x:xs) = mmap (x:) $ match wc allp xs
+
+
+
+-- Test cases --------------------
+
+testPattern =  "a=*;"
+testSubstitutions = "32"
+testString = "a=32;"
+
+substituteTest = substitute '*' testPattern testSubstitutions
+substituteCheck = substituteTest == testString
+
+matchTest = match '*' testPattern testString
+matchCheck = matchTest == Just testSubstitutions
+
+
+
+-------------------------------------------------------
+-- Applying patterns
+--------------------------------------------------------
+
+-- | Tries to find a match between the from template and the
+--   input m.a.p wildcard. If a match is found the result is
+--   inserted into the to template and the result is returned.
+--   If no match is found nothing is returned.
+--
+--   Examples:
+--
+--   >>> transformationApply '*' id "My name is Zacharias" ("My name is *", "Je m'appelle *")
+--   Just "Je m'appelle Zacharias"
+transformationApply :: Eq a => a -> ([a] -> [a]) -> [a] -> ([a], [a]) -> Maybe [a]
+transformationApply wc func input (search, sub) = mmap (substitute wc sub . func) $ match wc search input
+
+
+-- | Tries to apply a list of pattern transformations on the input.
+--   If a pattern transformation is successful the result is returned without
+--   trying to apply the rest. If no pattern transformation is successful then Nothing is returned.
+--
+--   Examples:
+--
+--   >>> transformationsApply '*' id [("Lol *", "Lulz *"), ("My name is *", "Ich heisse *")] "My name is Eliza"
+--   Just "Ich heisse Eliza"
+--   >>> transformationsApply '*' id [("Lol *", "Lulz *"), ("My house is *", "Ich heisse *")] "My name is Eliza"
+--   Nothing
+--   >>> transformationsApply '*' id [("* Lol", "* Lulz"), ("My name is *", "Ich heisse *")] "My name is Eliza, Lol"
+--   Just "My name is Eliza, Lulz"
+transformationsApply :: Eq a => a -> ([a] -> [a]) -> [([a], [a])] -> [a] -> Maybe [a]
+transformationsApply wildcard func transformations = msum . flip map transformations . transformationApply wildcard func
