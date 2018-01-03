@@ -1,2 +1,2 @@
-# EDAN40-FunctionalProgramming
-EDAN40-Functional Programming
+# EDAN40-Functional Programming
+EDAN40 Functional Programming
